@@ -1,0 +1,20 @@
+{
+    "name": "Talis Aspire Reading Lists Bookmarking",
+    "version": "0.1",
+    "icons": {},
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    },
+    "browser_action": {
+        "default_title": "Bookmark to Talis Aspire Reading Lists"
+    },
+    "manifest_version": 2
+}
