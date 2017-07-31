@@ -11,7 +11,7 @@
         "message": "Talis Aspire Rhestrau Darllen Offeryn Nod Tudalen Gosodiadau",
         "description": "Options menu title"
     },
-    "optionsInstitutionsLabel": {
+    "optionsInstitutionLabel": {
         "message": "Sefydliad:",
         "description": "Label for tenant select"
     },
@@ -38,6 +38,9 @@
     "optionsSettingsSaved": {
         "message": "Sefydliad arbed.",
         "description": "Institution saved message"
+    },
+    "noTenantAlert": {
+        "message": "Nodwch sefydliad mewn lleoliadau ymestyn",
+        "description": "Alert presented if no institution has been set"
     }
-
 }

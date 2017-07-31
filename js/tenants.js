@@ -1,5 +1,5 @@
 function saveActiveTenant(tenantCode, cb) {
-    chrome.storage.sync.set({
+    chrome.storage.local.set({
         activeTenant: tenantCode
     }, function() {
         cb();
@@ -19,7 +19,7 @@ function fetchTenants(cb) {
 }
 
 function storeTarlTenants(tenants, cb) {
-    chrome.storage.sync.set({
+    chrome.storage.local.set({
         tarlTenants: tenants
     }, function() {
         cb();
@@ -27,7 +27,7 @@ function storeTarlTenants(tenants, cb) {
 }
 
 function getTenants(cb) {
-    chrome.storage.sync.get({
+    chrome.storage.local.get({
         tarlTenants: {}
     }, function(tenants) {
         if ($.isEmptyObject(tenants.tarlTenants)) {
@@ -40,7 +40,7 @@ function getTenants(cb) {
 }
 
 function getActiveTenant(cb) {
-    chrome.storage.sync.get({
+    chrome.storage.local.get({
         activeTenant: null
     }, function(tenants) {
         return cb(tenants.activeTenant);

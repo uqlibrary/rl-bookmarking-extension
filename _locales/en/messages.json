@@ -11,7 +11,7 @@
         "message": "Talis Aspire Reading Lists Bookmarking Options",
         "description": "Options menu title"
     },
-    "optionsInstitutionsLabel": {
+    "optionsInstitutionLabel": {
         "message": "Institution:",
         "description": "Label for tenant select"
     },
@@ -38,6 +38,9 @@
     "optionsSettingsSaved": {
         "message": "Institution saved.",
         "description": "Institution saved message"
+    },
+    "noTenantAlert": {
+        "message": "Please specify an institution in extension settings",
+        "description": "Alert presented if no institution has been set"
     }
-
 }

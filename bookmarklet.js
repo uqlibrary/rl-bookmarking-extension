@@ -11,7 +11,7 @@ document.body.appendChild(tenants);
 
 getActiveTenant(function(tenantCode) {
     if (!tenantCode) {
-        alert('Please specify an institution in extension settings');
+        alert(chrome.i18n.getMessage('optionsSettingsSaved'));
         return;
     }
     var bookmarker = document.createElement('script'); 

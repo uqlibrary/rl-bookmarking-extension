@@ -13,7 +13,7 @@ $(function() {
     $('#save').on('click', function() {
         saveActiveTenant($('#tenantCode').val(), function() {
             // Update status to let user know options were saved.
-            $('#status').html('<div class="alert alert-success">' + chrome.i18n.getMessage('optionsSaved') + '</div>');
+            $('#status').html('<div class="alert alert-success">' + chrome.i18n.getMessage('optionsSettingsSaved') + '</div>');
             setTimeout(function() {
                 $('#status').textContent = '';
             }, 750);
