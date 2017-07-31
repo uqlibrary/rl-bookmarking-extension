@@ -1,0 +1,43 @@
+{
+    "extensionName": {
+        "message": "Talis Aspire Reading Lists Bookmarking",
+        "description": "Extension name"
+    },
+    "browserActionTitle": {
+        "message": "Bookmark to Talis Aspire Reading Lists",
+        "description": "Message when hovering over extension button"
+    },
+    "optionsTitle": {
+        "message": "Talis Aspire Reading Lists Bookmarking Options",
+        "description": "Options menu title"
+    },
+    "optionsInstitutionsLabel": {
+        "message": "Institution:",
+        "description": "Label for tenant select"
+    },
+    "optionsRefreshTenants": {
+        "message": "refresh",
+        "description": "Refresh tenants link"
+    },
+    "optionsChooseOneOptionLabel": {
+        "message": "Choose one",
+        "description": "Choose one select option text"
+    },
+    "optionsOtherOptionLabel": {
+        "message": "Other",
+        "description": "Manually specify tenant short code option"
+    },
+    "optionsShortCodeLabel": {
+        "message": "Short code",
+        "description": "Manually add tenant by short code input label"
+    },
+    "optionsSave": {
+        "message": "Save",
+        "description": "Save settings"
+    },
+    "optionsSettingsSaved": {
+        "message": "Institution saved.",
+        "description": "Institution saved message"
+    }
+
+}

@@ -1,20 +1,21 @@
 {
-    "name": "Talis Aspire Reading Lists Bookmarking",
+    "name": "__MSG_extensionName__",
     "version": "0.1",
     "icons": {},
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["js/tenants.js", "background.js"],
         "persistent": false
     },
     "permissions": [
-        "activeTab"
+        "activeTab", "storage", "https://talis-public.s3-eu-west-1.amazonaws.com/talis.com/customers.json"
     ],
     "options_ui": {
         "page": "options.html",
         "chrome_style": true
     },
     "browser_action": {
-        "default_title": "Bookmark to Talis Aspire Reading Lists"
+        "default_title": "__MSG_browserActionTitle__"
     },
+    "default_locale": "en",
     "manifest_version": 2
 }
