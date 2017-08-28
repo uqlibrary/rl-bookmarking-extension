@@ -1,5 +1,9 @@
+function chromeOrBrowser() {
+    return this.browser || chrome;
+}
+
 function saveActiveTenant(tenantCode, cb) {
-    chrome.storage.local.set({
+    chromeOrBrowser().storage.sync.set({
         activeTenant: tenantCode
     }, function() {
         cb();
@@ -7,19 +11,17 @@ function saveActiveTenant(tenantCode, cb) {
 }
 
 function fetchTenants(cb) {
-    $.get('https://talis-public.s3-eu-west-1.amazonaws.com/talis.com/customers.json', function (data) {
-        var tenants = {};
-        for (var code in data) {
-            if (data[code].hasOwnProperty('apps') && data[code].apps.hasOwnProperty('rl')) {
-                tenants[code] = data[code].name;
-            }
+    var tenants = {};
+    for (var code in allTenants) {
+        if (allTenants[code].hasOwnProperty('apps') && allTenants[code].apps.hasOwnProperty('rl')) {
+            tenants[code] = allTenants[code].name;
         }
-        return cb(tenants);
-    });
+    }
+    return cb(tenants);
 }
 
 function storeTarlTenants(tenants, cb) {
-    chrome.storage.local.set({
+    chromeOrBrowser().storage.sync.set({
         tarlTenants: tenants
     }, function() {
         cb();
@@ -27,7 +29,7 @@ function storeTarlTenants(tenants, cb) {
 }
 
 function getTenants(cb) {
-    chrome.storage.local.get({
+    chromeOrBrowser().storage.sync.get({
         tarlTenants: {}
     }, function(tenants) {
         if ($.isEmptyObject(tenants.tarlTenants)) {
@@ -40,7 +42,7 @@ function getTenants(cb) {
 }
 
 function getActiveTenant(cb) {
-    chrome.storage.local.get({
+    chromeOrBrowser().storage.sync.get({
         activeTenant: null
     }, function(tenants) {
         return cb(tenants.activeTenant);

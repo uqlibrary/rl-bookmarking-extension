@@ -1,21 +1,33 @@
 {
     "name": "__MSG_extensionName__",
+    "author": "Talis Education Limited",
     "version": "0.1",
     "icons": {},
     "background": {
-        "scripts": ["js/tenants.js", "background.js"],
+        "page": "background.html",
         "persistent": false
     },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/bookmarker.js"]
+        }
+    ],
     "permissions": [
-        "activeTab", "storage", "https://talis-public.s3-eu-west-1.amazonaws.com/talis.com/customers.json"
+        "activeTab", "storage", "*://*/*"
     ],
     "options_ui": {
         "page": "options.html",
         "chrome_style": true
     },
+    "options_page": "options.html",
     "browser_action": {
         "default_title": "__MSG_browserActionTitle__"
     },
     "default_locale": "en",
-    "manifest_version": 2
+    "manifest_version": 2,
+    "-ms-preload": {
+        "backgroundScript": "js/ms/backgroundScriptsAPIBridge.js",
+        "contentScript": "js/ms/contentScriptsAPIBridge.js"
+    }
 }
