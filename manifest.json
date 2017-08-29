@@ -1,8 +1,12 @@
 {
-    "name": "__MSG_extensionName__",
+    "name": "Talis Aspire Reading Lists Bookmarker",
     "author": "Talis Education Limited",
     "version": "0.1",
-    "icons": {},
+    "icons":  { 
+        "16": "images/Talis16.png",
+        "48": "images/Talis48.png",
+        "128": "images/Talis128.png" 
+    },
     "background": {
         "page": "background.html",
         "persistent": false
@@ -22,7 +26,12 @@
     },
     "options_page": "options.html",
     "browser_action": {
-        "default_title": "__MSG_browserActionTitle__"
+        "default_title": "__MSG_browserActionTitle__",
+        "default_icon": {                    
+            "16": "images/Talis16.png",
+            "24": "images/Talis24.png",
+            "32": "images/Talis32.png"
+          }
     },
     "default_locale": "en",
     "manifest_version": 2,
