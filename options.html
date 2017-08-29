@@ -5,39 +5,38 @@
     <title data-message="optionsTitle">Talis Aspire Reading Lists Bookmarking Options</title>
     <script src="js/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/options.css" />
     <script src="js/bootstrap.min.js"></script>
     <script src="js/allTenants.js"></script>
     <script src="js/tenants.js"></script>
     <script src="js/options.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row" id="status">
 
         </div>
         <div class="row">
-            <div class="col-xs-2">
-                <span data-message="optionsInstitutionLabel">Institution:</span><br>
-                <a href="#" class="btn btn-small refresh-tenants" data-message="optionsRefreshTenants">refresh</a>
-            </div>
             <div class="col-xs-3">
+                <span data-message="optionsInstitutionLabel">Institution:</span><br>
+            </div>
+            <div class="col-xs-7">
                 <select id="tenantList">
                     <option value="" data-message="optionsChooseOneOptionLabel">Choose one</option>
                     <option id="specifyTenant" value="" data-message="optionsOtherOptionLabel">Other</option>
                 </select>
             </div>
+            <div class="col-xs-2">
+                <button id="save" data-message="optionsSave">Save</button>
+            </div>
         </div>
         <div class="row hidden" id="manualEntry">
-            <div class="col-xs-2" data-message="optionsShortCodeLabel">Short code:</div>
-            <div class="col-xs-2">
+            <div class="col-xs-3" data-message="optionsShortCodeLabel">Short code:</div>
+            <div class="col-xs-7">
                 <input type="text" id="tenantCode" />
             </div>
         </div>        
-        <div class="row">
-            <div class="col-xs-2 col-xs-offset-2">
-                <button id="save" data-message="optionsSave">Save</button>
-            </div>
-        </div>        
+  
     </div>
 </body>
 </html>

@@ -21,12 +21,10 @@ $(function() {
     });
 
     $('.refresh-tenants').on('click', function () {
-        $('#tenantList .tenantCode').remove();
-        storeTarlTenants({}, function () {
-            fetchTenants(function(tenants) {
-                storeTarlTenants(tenants, loadTenantList);
-            });
-        });
+        $('#tenantList .tenantCode').remove();        
+        getTenants(function(tenants) {
+            storeTarlTenants(tenants, loadTenantList);
+        });        
     });
 
     var objects = document.getElementsByTagName('*'), i;
