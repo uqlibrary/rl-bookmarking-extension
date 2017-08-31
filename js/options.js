@@ -20,19 +20,10 @@ $(function() {
         });
     });
 
-    $('.refresh-tenants').on('click', function () {
-        $('#tenantList .tenantCode').remove();
-        storeTarlTenants({}, function () {
-            fetchTenants(function(tenants) {
-                storeTarlTenants(tenants, loadTenantList);
-            });
-        });
-    });
-
     var objects = document.getElementsByTagName('*'), i;
     for(i = 0; i < objects.length; i++) {
         if (objects[i].dataset && objects[i].dataset.message) {
-        objects[i].innerHTML = chrome.i18n.getMessage(objects[i].dataset.message);
+            objects[i].innerHTML = chromeOrBrowser().i18n.getMessage(objects[i].dataset.message);
         }
     }
     loadTenantList();

@@ -28,7 +28,7 @@
         "description": "Manually specify tenant short code option"
     },
     "optionsShortCodeLabel": {
-        "message": "Cod byr",
+        "message": "Cod byr:",
         "description": "Manually add tenant by short code input label"
     },
     "optionsSave": {

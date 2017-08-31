@@ -1,46 +1,60 @@
+/**
+ * MS Edge doesn't support the promise-based APIs (`chrome.*`), so use the callback
+ * based APIs (`browser.*`).  *Chrome* blows up if you use `browser`, so use `this.browser` instead
+ * 
+ * @returns {Object}
+ */
+function chromeOrBrowser() {
+    return this.browser || chrome;
+}
+
+/**
+ * Stores the preferred tenantCode in browser storage
+ * 
+ * @param {string}     tenantCode 
+ * @param {function()} cb - Callback to run once stored
+ */
 function saveActiveTenant(tenantCode, cb) {
-    chrome.storage.local.set({
+    chromeOrBrowser().storage.sync.set({
         activeTenant: tenantCode
     }, function() {
         cb();
     });
 }
 
-function fetchTenants(cb) {
-    $.get('https://talis-public.s3-eu-west-1.amazonaws.com/talis.com/customers.json', function (data) {
-        var tenants = {};
-        for (var code in data) {
-            if (data[code].hasOwnProperty('apps') && data[code].apps.hasOwnProperty('rl')) {
-                tenants[code] = data[code].name;
-            }
-        }
-        return cb(tenants);
-    });
-}
-
-function storeTarlTenants(tenants, cb) {
-    chrome.storage.local.set({
-        tarlTenants: tenants
-    }, function() {
-        cb();
-    });
-}
-
+/**
+ * 
+ * @callback allTenants
+ * 
+ * @param {Object} tenants An object of tenants, keyed by tenant code, with the name as values 
+ */
+/**
+ * Returns all defined tenants
+ * 
+ * @param {allTenants} cb 
+ */
 function getTenants(cb) {
-    chrome.storage.local.get({
-        tarlTenants: {}
-    }, function(tenants) {
-        if ($.isEmptyObject(tenants.tarlTenants)) {
-            return fetchTenants(function(tenantList) {
-                storeTarlTenants(tenantList, cb);
-            });
+    var tenants = {};
+    for (var code in allTenants) {
+        if (allTenants[code].hasOwnProperty('apps') && allTenants[code].apps.hasOwnProperty('rl')) {
+            tenants[code] = allTenants[code].name;
         }
-        return cb(tenants.tarlTenants);
-    });
+    }
+    cb(tenants);
 }
 
+/**
+ * @callback activeTenant
+ * 
+ * @param {string} tenantCode - Currently active tenant code
+ */
+/**
+ * Returns the saved 'active' tenant from browser storage
+ * 
+ * @param {activeTenant} cb 
+ */
 function getActiveTenant(cb) {
-    chrome.storage.local.get({
+    chromeOrBrowser().storage.sync.get({
         activeTenant: null
     }, function(tenants) {
         return cb(tenants.activeTenant);
