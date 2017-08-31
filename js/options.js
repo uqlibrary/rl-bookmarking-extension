@@ -20,13 +20,6 @@ $(function() {
         });
     });
 
-    $('.refresh-tenants').on('click', function () {
-        $('#tenantList .tenantCode').remove();        
-        getTenants(function(tenants) {
-            storeTarlTenants(tenants, loadTenantList);
-        });        
-    });
-
     var objects = document.getElementsByTagName('*'), i;
     for(i = 0; i < objects.length; i++) {
         if (objects[i].dataset && objects[i].dataset.message) {

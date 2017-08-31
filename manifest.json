@@ -1,7 +1,7 @@
 {
     "name": "__MSG_extensionName__",
     "author": "Talis Education Limited",
-    "version": "0.1",
+    "version": "__VERSION__",
     "icons":  { 
         "16": "images/icon16.png",
         "48": "images/icon48.png",
@@ -39,7 +39,6 @@
     },
     "default_locale": "en",
     "manifest_version": 2,
-    // Remove the following for all browsers besides MS Edge
     "-ms-preload": {
         "backgroundScript": "js/ms/backgroundScriptsAPIBridge.js",
         "contentScript": "js/ms/contentScriptsAPIBridge.js"

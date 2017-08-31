@@ -9,24 +9,13 @@ function chromeOrBrowser() {
 }
 
 /**
- * 
- * chrome.sync does not work when loading temporary extension in Firefox (e.g. development mode)
- * 
- * @returns {Object}
- */
-function syncOrLocalStorage() {
-    var api = chromeOrBrowser();
-    return api.sync || api.local;
-}
-
-/**
  * Stores the preferred tenantCode in browser storage
  * 
  * @param {string}     tenantCode 
  * @param {function()} cb - Callback to run once stored
  */
 function saveActiveTenant(tenantCode, cb) {
-    chromeOrBrowser().storage.local.set({
+    chromeOrBrowser().storage.sync.set({
         activeTenant: tenantCode
     }, function() {
         cb();
@@ -35,14 +24,14 @@ function saveActiveTenant(tenantCode, cb) {
 
 /**
  * 
- * @callback AllTenants
+ * @callback allTenants
  * 
  * @param {Object} tenants An object of tenants, keyed by tenant code, with the name as values 
  */
 /**
  * Returns all defined tenants
  * 
- * @param {AllTenants} cb 
+ * @param {allTenants} cb 
  */
 function getTenants(cb) {
     var tenants = {};
@@ -65,7 +54,7 @@ function getTenants(cb) {
  * @param {activeTenant} cb 
  */
 function getActiveTenant(cb) {
-    chromeOrBrowser().storage.local.get({
+    chromeOrBrowser().storage.sync.get({
         activeTenant: null
     }, function(tenants) {
         return cb(tenants.activeTenant);
