@@ -3,6 +3,10 @@
         "message": "Talis Aspire Rhestrau Darllen Offeryn Nod Tudalen",
         "description": "Extension name"
     },
+    "description": {
+        "message": "Talis Aspire Rhestrau Darllen Offeryn Nod Tudalen",
+        "description": "Extension description"
+    },    
     "browserActionTitle": {
         "message": "Ychwanegu Llyfrnod at Rhestr Ddarllen",
         "description": "Message when hovering over extension button"

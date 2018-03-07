@@ -63,7 +63,14 @@ module.exports = function(grunt) {
     if (grunt.option('identifier')) {
       manifest.applications = { 'gecko': { 'id': grunt.option('identifier') } };
     }
-    if (browser !== 'msedge') {
+    if (browser === 'msedge') {
+      manifest.icons = [
+        {"sizes":"16x16", "src": "images/icon16.png"},
+        {"sizes": "30x30", "src": "images/icon30.png"},
+        {"sizes": "50x50", "src": "images/icon50.png"},
+        {"sizes":"120x120", "src": "images/icon120.png"}
+      ];
+    } else {
       delete(manifest['-ms-preload']);
     }
     grunt.file.write(grunt.config('distdir') + '/manifest.json', JSON.stringify(manifest, null, 2));
