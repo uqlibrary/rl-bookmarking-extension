@@ -1,6 +1,6 @@
 {
   "name": "talis-reading-lists-bookmarker",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A browser extension to bookmark resources to Talis Aspire Reading Lists",
   "devDependencies": {
     "bower": "^1.8.0",
