@@ -6,6 +6,9 @@
  */
 
 (function() {
+  function chromeOrBrowser() {
+    return this.browser || chrome;
+  }
   /**
    * Injected into page to redirect to the dynamic page parser
    * 
@@ -21,7 +24,7 @@
       ); 
     document.body.appendChild(bookmarker);
   }
-  browser.runtime.onMessage.addListener(function(message) {
+  chromeOrBrowser().runtime.onMessage.addListener(function(message) {
     bookmarkPage(message.tenantCode);
   });
 })();
