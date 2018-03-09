@@ -8,6 +8,6 @@
     "grunt-contrib-copy": "^1.0.0"
   },
   "scripts": {
-      "postinstall": "./node_modules/.bin/bower install"
+    "postinstall": "./node_modules/.bin/bower install"
   }
 }

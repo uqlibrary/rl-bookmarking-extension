@@ -6,7 +6,8 @@
     "icons":  { 
         "16": "images/icon16.png",
         "48": "images/icon48.png",
-        "128": "images/icon128.png" 
+        "128": "images/icon128.png",
+        "176": "images/icon176.png"
     },
     "background": {
         "page": "background.html",
@@ -39,9 +40,5 @@
           }
     },
     "default_locale": "en",
-    "manifest_version": 2,
-    "-ms-preload": {
-        "backgroundScript": "js/ms/backgroundScriptsAPIBridge.js",
-        "contentScript": "js/ms/contentScriptsAPIBridge.js"
-    }
+    "manifest_version": 2
 }

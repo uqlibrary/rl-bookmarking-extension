@@ -68,11 +68,12 @@ module.exports = function(grunt) {
         {"sizes":"16x16", "src": "images/icon16.png"},
         {"sizes": "30x30", "src": "images/icon30.png"},
         {"sizes": "50x50", "src": "images/icon50.png"},
-        {"sizes":"120x120", "src": "images/icon120.png"}
+        {"sizes":"120x120", "src": "images/icon120.png"},
+        {"sizes":"176x176", "src": "images/icon176.png"},
       ];
-    } else {
-      delete(manifest['-ms-preload']);
-    }
+      manifest.start_url = '';
+      manifest.scope = '/';
+    } 
     grunt.file.write(grunt.config('distdir') + '/manifest.json', JSON.stringify(manifest, null, 2));
   });
   grunt.registerTask(

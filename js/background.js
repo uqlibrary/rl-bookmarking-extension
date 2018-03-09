@@ -3,21 +3,27 @@
  * 
  * This only does anything when the bookmarking button is clicked
  */
-chrome.browserAction.onClicked.addListener(function(tab) {
+chromeOrBrowser().browserAction.onClicked.addListener(function(tab) {
     // If no institution has been set, go to the options page to set one
     getActiveTenant(function (tenantCode) {
         if (!tenantCode) {
-            if (window.confirm(chrome.i18n.getMessage('noTenantAlert'))) {
-                chrome.runtime.openOptionsPage();
+            if (window.confirm(chromeOrBrowser().i18n.getMessage('noTenantAlert'))) {
+                chromeOrBrowser().runtime.openOptionsPage();
             }
         }
         // Edge does not support the promise-based APIs (chrome.*), but, conveniently, it also 
         // requires the bookmarker to be injected via a content_script (whereas other browsers 
         // seem fine as background scripts), so we'll use that to differentiate
         if (this.browser) {
-            browser.tabs.executeScript(
-                { code: 'bookmarkPage("' + tenantCode + '")'}
-            );
+            browser.tabs.executeScript(null, {
+                file: "/js/bookmarker.js"
+            });
+   
+            browser.tabs.query({active: true, currentWindow: true}, function(tabs) {
+              browser.tabs.sendMessage(tabs[0].id, {tenantCode: tenantCode});
+            });
+   
+            return;   
         } else {
             // This is effectively the same as bookmarker.js
             var bookmarkCode = 'var bookmarker = document.createElement(\'script\');' +
