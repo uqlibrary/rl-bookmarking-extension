@@ -8,6 +8,40 @@ function chromeOrBrowser() {
     return this.browser || chrome;
 }
 
+var storage = chromeOrBrowser().storage.sync;
+
+if (!storage) {
+    storage = chromeOrBrowser().storage.local;
+}
+/**
+ * @callback activeTenant
+ * 
+ * @param {string} tenantCode - Currently active tenant code
+ */
+/**
+ * Returns the saved 'active' tenant from browser storage
+ * 
+ * @param {activeTenant} cb 
+ */
+function getActiveTenant(cb) {
+    storage.get({
+        activeTenant: null
+    }, function(tenants, err) {
+        if (chromeOrBrowser().runtime.lastError || typeof tenants === 'undefined' || !tenants.activeTenant) {
+            chromeOrBrowser().storage.local.get({
+                activeTenant: null
+            }, function(tenants) {
+                if (tenants.activeTenant) {
+                    storage = chromeOrBrowser().storage.local;
+                }
+                return cb(tenants.activeTenant);
+            });
+        } else {
+            return cb(tenants.activeTenant);
+        }
+    });    
+}
+
 /**
  * Stores the preferred tenantCode in browser storage
  * 
@@ -15,10 +49,23 @@ function chromeOrBrowser() {
  * @param {function()} cb - Callback to run once stored
  */
 function saveActiveTenant(tenantCode, cb) {
-    chromeOrBrowser().storage.sync.set({
+    storage.set({
         activeTenant: tenantCode
     }, function() {
-        cb();
+        if (chromeOrBrowser().runtime.lastError) {
+            storage = chromeOrBrowser().storage.local;
+            return saveActiveTenant(tenantCode, cb);
+        } else {
+            getActiveTenant(function(t) {
+                if (typeof t === 'undefined') {
+                    storage = chromeOrBrowser().storage.local;
+                    return saveActiveTenant(tenantCode, cb);
+                } else {
+                    cb();
+                }
+            });
+            
+        }
     });
 }
 
@@ -41,22 +88,4 @@ function getTenants(cb) {
         }
     }
     cb(tenants);
-}
-
-/**
- * @callback activeTenant
- * 
- * @param {string} tenantCode - Currently active tenant code
- */
-/**
- * Returns the saved 'active' tenant from browser storage
- * 
- * @param {activeTenant} cb 
- */
-function getActiveTenant(cb) {
-    chromeOrBrowser().storage.sync.get({
-        activeTenant: null
-    }, function(tenants) {
-        return cb(tenants.activeTenant);
-    });    
 }
