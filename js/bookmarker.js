@@ -1,8 +1,5 @@
 /*
- * This exists for MS Edge, and should more or less be functionally identical to `bookmarkCode` 
- * in `background.js`.
- * Edge needs this to be a content_script that is injected, however.
- * @todo Find a way to not duplicate this.
+ * Content script to inject the dynamic bookmarking JS directly into the page.
  */
 
 (function() {
