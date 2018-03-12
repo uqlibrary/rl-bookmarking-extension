@@ -35,19 +35,7 @@ module.exports = function(grunt) {
             dest: 'dist'
           }
         ]
-      },
-      msedge: {
-        files: [
-          { 
-            expand: true, 
-            cwd: './', 
-            src: [
-              'js/ms/**'
-            ], 
-            dest: 'dist'
-          }
-        ]
-      }      
+      }     
     }
   });
 
@@ -57,15 +45,24 @@ module.exports = function(grunt) {
     grunt.file.delete(grunt.config('distdir'));
     grunt.file.mkdir(grunt.config('distdir'));
   });
-  grunt.registerTask('write-manifest', 'Writes the manifest file to dist', function (browser) {
+  grunt.registerTask('write-manifest', 'Writes the manifest file to dist', function (dist) {
     var manifest = grunt.file.readJSON('manifest.json');
     manifest.version = grunt.config('pkg.version');
     if (grunt.option('identifier')) {
       manifest.applications = { 'gecko': { 'id': grunt.option('identifier') } };
     }
-    if (browser !== 'msedge') {
-      delete(manifest['-ms-preload']);
-    }
+    if (dist === 'manifold') {
+      // manifoldjs requires a completely different icons schema for packaging edge extensions
+      manifest.icons = [
+        {"sizes":"16x16", "src": "images/icon16.png"},
+        {"sizes": "30x30", "src": "images/icon30.png"},
+        {"sizes": "50x50", "src": "images/icon50.png"},
+        {"sizes":"120x120", "src": "images/icon120.png"},
+        {"sizes":"176x176", "src": "images/icon176.png"},
+      ];
+      manifest.start_url = '';
+      manifest.scope = '/';
+    } 
     grunt.file.write(grunt.config('distdir') + '/manifest.json', JSON.stringify(manifest, null, 2));
   });
   grunt.registerTask(
@@ -74,9 +71,9 @@ module.exports = function(grunt) {
     ['create-dist-dir', 'write-manifest:common', 'copy:bower', 'copy:common']
   );
   grunt.registerTask(
-    'dist-msedge', 
+    'dist-manifold', 
     'Create distribution for Web Extension browsers', 
-    ['create-dist-dir', 'write-manifest:msedge', 'copy:bower', 'copy:common', 'copy:msedge']
+    ['create-dist-dir', 'write-manifest:manifold', 'copy:bower', 'copy:common']
   );
   grunt.registerTask('default', ['dist-common']);
 };

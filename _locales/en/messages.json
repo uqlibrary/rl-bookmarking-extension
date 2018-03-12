@@ -3,6 +3,10 @@
         "message": "Talis Aspire Reading Lists Bookmarking",
         "description": "Extension name"
     },
+    "description": {
+        "message": "Talis Aspire Reading Lists Bookmarking",
+        "description": "Extension description"
+    },    
     "browserActionTitle": {
         "message": "Bookmark to Talis Aspire Reading Lists",
         "description": "Message when hovering over extension button"
