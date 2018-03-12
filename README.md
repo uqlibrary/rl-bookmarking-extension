@@ -43,7 +43,7 @@ To build the files for the extension,
 $ npm install # This should also run bower install
 # replace ./images/*.png and ./_locales with institutional preferences
 $ grunt # This will build a Chrome/Opera/Vivaldi extension
-$ grunt dist-manifold # This will build a (Manifoldjs)[https://github.com/pwa-builder/ManifoldJS] compatible manifest, which can be used to package an MS Edge extension
+$ grunt dist-manifold # This will build a [Manifoldjs](https://github.com/pwa-builder/ManifoldJS) compatible manifest, which can be used to package an MS Edge extension
 $ grunt --identifier="{AMO UUID}" # This will build the extension with a Mozilla Add-on Identifier
 ```
 
