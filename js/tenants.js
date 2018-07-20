@@ -82,10 +82,45 @@ function saveActiveTenant(tenantCode, cb) {
  */
 function getTenants(cb) {
     var tenants = {};
-    for (var code in allTenants) {
-        if (allTenants[code].hasOwnProperty('apps') && allTenants[code].apps.hasOwnProperty('rl')) {
-            tenants[code] = allTenants[code].name;
+    getTenantList(function(tenantList) {
+        for (var code in tenantList) {
+            if (allTenants[code].hasOwnProperty('apps') && allTenants[code].apps.hasOwnProperty('rl')) {
+                tenants[code] = allTenants[code].name;
+            }
         }
-    }
-    cb(tenants);
+        cb(tenants);
+    });
+}
+
+function getTenantList(cb) {
+    var headers = new Headers({'Content-Type': 'application/json'});
+    fetch('https://s3-eu-west-1.amazonaws.com/talis-public-rl/tarl/customers.json', {headers: headers})
+    .then(function (response) {
+        console.log(response);
+        return response.json();
+    })   
+    .catch(function (e) {
+        console.log('We errored');
+        console.log(e);
+        return allTenants;
+    })
+    .then(function (tenants) {
+        cb(tenants);
+    });      
+    // fetch('https://talis.com/wp-content/themes/talis/json.php?callback=activeTenants')
+    // .then((response) => response.text())
+    // .then((responseText) => {
+    //     var match = responseText.match(/activeTenants\((.*)\);/);
+    //     if (!match) {
+    //         throw new Error('invalid JSONP response');
+    //     }
+    //     return JSON.parse(match[1]);
+    // })
+    // .catch(function(error) {
+    //     console.log(error);
+    //     return allTenants;
+    // })
+    // .then((tenants) => {
+    //     cb(tenants);
+    // });   
 }

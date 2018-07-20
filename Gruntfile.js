@@ -60,6 +60,7 @@ module.exports = function(grunt) {
         {"sizes":"120x120", "src": "images/icon120.png"},
         {"sizes":"176x176", "src": "images/icon176.png"},
       ];
+      manifest.permissions = ["tab", "storage", "*://*/*"]
       manifest.start_url = '';
       manifest.scope = '/';
     } 
