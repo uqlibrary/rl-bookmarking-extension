@@ -7,40 +7,40 @@ module.exports = function(grunt) {
     copy: {
       bower: {
         files: [
-          { 
-            expand: true, 
-            cwd: './', 
+          {
+            expand: true,
+            cwd: './',
             src: [
-              'bower_components/bootstrap/dist/js/bootstrap.min.js', 
+              'bower_components/bootstrap/dist/js/bootstrap.min.js',
               'bower_components/bootstrap/dist/css/bootstrap.min.css',
               'bower_components/jquery/dist/jquery.min.js'
-            ], 
+            ],
             dest: 'dist'
           }
         ]
       },
       common: {
         files: [
-          { 
-            expand: true, 
-            cwd: './', 
+          {
+            expand: true,
+            cwd: './',
             src: [
               '*.html',
               '_locales/**',
               'images/**',
-              'css/**', 
+              'css/**',
               'js/*.js',
               '!js/ms'
-            ], 
+            ],
             dest: 'dist'
           }
         ]
-      }     
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
-  
+
   grunt.registerTask('create-dist-dir', 'Creates the dist directory', function () {
     grunt.file.delete(grunt.config('distdir'));
     grunt.file.mkdir(grunt.config('distdir'));
@@ -60,20 +60,20 @@ module.exports = function(grunt) {
         {"sizes":"120x120", "src": "images/icon120.png"},
         {"sizes":"176x176", "src": "images/icon176.png"},
       ];
-      manifest.permissions = ["tab", "storage", "*://*/*"]
+      manifest.permissions[0] = "tab";
       manifest.start_url = '';
       manifest.scope = '/';
-    } 
+    }
     grunt.file.write(grunt.config('distdir') + '/manifest.json', JSON.stringify(manifest, null, 2));
   });
   grunt.registerTask(
-    'dist-common', 
-    'Create distribution for Web Extension browsers', 
+    'dist-common',
+    'Create distribution for Web Extension browsers',
     ['create-dist-dir', 'write-manifest:common', 'copy:bower', 'copy:common']
   );
   grunt.registerTask(
-    'dist-manifold', 
-    'Create distribution for Web Extension browsers', 
+    'dist-manifold',
+    'Create distribution for Web Extension browsers',
     ['create-dist-dir', 'write-manifest:manifold', 'copy:bower', 'copy:common']
   );
   grunt.registerTask('default', ['dist-common']);
