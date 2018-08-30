@@ -98,7 +98,7 @@ function getTenants(cb) {
  */
 function getTenantList(cb) {
     var headers = new Headers({'Content-Type': 'application/json'});
-    fetch('https://s3-eu-west-1.amazonaws.com/talis-public/talis.com/customers.json', {headers: headers})
+    fetch('https://talis-public.talis.com/talis.com/customers.json', {headers: headers})
     .then(function (response) {
         return response.json();
     })

@@ -20,7 +20,7 @@
         }
     ],
     "permissions": [
-        "activeTab", "storage", "*://*/*", "https://s3-eu-west-1.amazonaws.com/talis-public/talis.com/customers.json"
+        "activeTab", "storage", "*://*/*", "https://talis-public.talis.com/talis.com/customers.json"
     ],
     "options_ui": {
         "page": "options.html",
