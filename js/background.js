@@ -8,7 +8,10 @@ chromeOrBrowser().browserAction.onClicked.addListener(function(tab) {
     getActiveTenant(function (tenantCode) {
         if (!tenantCode) {
             if (window.confirm(chromeOrBrowser().i18n.getMessage('noTenantAlert'))) {
-                chromeOrBrowser().runtime.openOptionsPage();
+                // browser.runtime.openOptionsPage() not supported by ms-edge, so here's a workaround
+                chromeOrBrowser().tabs.create({
+                    url: chromeOrBrowser().extension.getURL("options.html")
+                  });
             }
         }
 
