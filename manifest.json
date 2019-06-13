@@ -13,12 +13,6 @@
         "page": "background.html",
         "persistent": false
     },
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["js/bookmarker.js"]
-        }
-    ],
     "permissions": [
         "activeTab", "storage", "https://talis-public.talis.com/*"
     ],
