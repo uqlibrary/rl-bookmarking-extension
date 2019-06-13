@@ -1,22 +1,21 @@
 module.exports = function(grunt) {
-
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     distdir: './dist',
     copy: {
-      bower: {
+      dependencies: {
         files: [
           {
             expand: true,
-            cwd: './',
+            cwd: './node_modules',
             src: [
-              'bower_components/bootstrap/dist/js/bootstrap.min.js',
-              'bower_components/bootstrap/dist/css/bootstrap.min.css',
-              'bower_components/jquery/dist/jquery.min.js'
+              'bootstrap/dist/js/bootstrap.min.js',
+              'bootstrap/dist/css/bootstrap.min.css',
+              'jquery/dist/jquery.min.js'
             ],
-            dest: 'dist'
-          }
+            dest: 'dist/dependencies'
+          },
         ]
       },
       common: {
@@ -50,6 +49,9 @@ module.exports = function(grunt) {
     manifest.version = grunt.config('pkg.version');
     if (grunt.option('identifier')) {
       manifest.applications = { 'gecko': { 'id': grunt.option('identifier') } };
+      delete manifest.options_page;
+      delete manifest.options_ui.chrome_style;
+      manifest.options_ui.browser_style = true;
     }
     if (dist === 'manifold') {
       // manifoldjs requires a completely different icons schema for packaging edge extensions
@@ -70,12 +72,12 @@ module.exports = function(grunt) {
   grunt.registerTask(
     'dist-common',
     'Create distribution for Web Extension browsers',
-    ['create-dist-dir', 'write-manifest:common', 'copy:bower', 'copy:common']
+    ['create-dist-dir', 'write-manifest:common', 'copy:dependencies', 'copy:common']
   );
   grunt.registerTask(
     'dist-manifold',
     'Create distribution for Web Extension browsers',
-    ['create-dist-dir', 'write-manifest:manifold', 'copy:bower', 'copy:common']
+    ['create-dist-dir', 'write-manifest:manifold', 'copy:dependencies', 'copy:common']
   );
   grunt.registerTask('default', ['dist-common']);
 };
