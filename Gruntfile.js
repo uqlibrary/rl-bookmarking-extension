@@ -61,6 +61,7 @@ module.exports = function(grunt) {
         {"sizes":"176x176", "src": "images/icon176.png"},
       ];
       manifest.permissions[0] = "tab";
+      manifest.permissions.push("*://*/*");
       manifest.start_url = '';
       manifest.scope = '/';
     }
