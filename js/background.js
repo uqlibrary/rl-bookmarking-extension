@@ -1,6 +1,6 @@
 /**
  * Background script.
- * 
+ *
  * This only does anything when the bookmarking button is clicked
  */
 chromeOrBrowser().browserAction.onClicked.addListener(function(tab) {
@@ -16,13 +16,14 @@ chromeOrBrowser().browserAction.onClicked.addListener(function(tab) {
         }
 
         chromeOrBrowser().tabs.executeScript(null, {
-            file: "/js/bookmarker.js"
-        });
-   
-        chromeOrBrowser().tabs.query({active: true, currentWindow: true}, function(tabs) {
-            chromeOrBrowser().tabs.sendMessage(tabs[0].id, {tenantCode: tenantCode});
+            file: "/js/bookmarker.js",
+            runAt: 'document_end'
         });
 
-        return;   
+        chromeOrBrowser().tabs.query({active: true, currentWindow: true}, function(tabs) {
+            chromeOrBrowser().tabs.sendMessage(tabs[0].id, {tenantCode: tenantCode});
+            return true;
+        });
+        return;
     });
 });
