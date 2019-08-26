@@ -24,6 +24,6 @@ chromeOrBrowser().browserAction.onClicked.addListener(function(tab) {
             chromeOrBrowser().tabs.sendMessage(tabs[0].id, {tenantCode: tenantCode});
             return true;
         });
-        return;
+        return true;
     });
 });
