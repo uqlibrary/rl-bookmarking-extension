@@ -5,13 +5,16 @@
 function chromeOrBrowser() {
   return this.browser || chrome;
 }
-console.log(new Date().getTime() + ': bookmarker.js');
 /**
  * Injected into page to redirect to the dynamic page parser
  *
  * @param {String} tenantCode
  */
 function bookmarkPage(tenantCode) {
+  if (document.getElementById('bookmarkingScript')) {
+    document.getElementById('bookmarkingScript').remove();
+  }
+
   var bookmarker = document.createElement('script');
   bookmarker.setAttribute(
     'src',
@@ -19,11 +22,12 @@ function bookmarkPage(tenantCode) {
       encodeURIComponent(encodeURI(window.location.href)) + '&bookmarkVersion=1&title=' +
       encodeURIComponent(document.title) + '&hasJquery=no'
     );
+  bookmarker.setAttribute('id', 'bookmarkingScript');
+
   if (document.body) {
     document.body.appendChild(bookmarker);
   }
 }
 chromeOrBrowser().runtime.onMessage.addListener(function(message) {
-  console.log(new Date().getTime() + ': bookmarker.js: onMessage callback');
   bookmarkPage(message.tenantCode);
 });

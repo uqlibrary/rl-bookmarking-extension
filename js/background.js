@@ -3,6 +3,7 @@
  *
  * This only does anything when the bookmarking button is clicked
  */
+var executedScript = false;
 chromeOrBrowser().browserAction.onClicked.addListener(function(currentTab) {
     // If no institution has been set, go to the options page to set one
     getActiveTenant(function (tenantCode) {
@@ -14,8 +15,16 @@ chromeOrBrowser().browserAction.onClicked.addListener(function(currentTab) {
                   });
             }
         }
-
-        console.log(new Date().getTime() + ': background.js: already have bookmarker.js SENDING');
-        chromeOrBrowser().tabs.sendMessage(currentTab.id, {tenantCode: tenantCode});
+        if (!executedScript) {
+            chromeOrBrowser().tabs.executeScript(null, {
+                file: "/js/bookmarker.js",
+                runAt: 'document_end'
+            }, function () {
+                executedScript = true;
+                chromeOrBrowser().tabs.sendMessage(currentTab.id, {tenantCode: tenantCode});
+            });
+        } else {
+            chromeOrBrowser().tabs.sendMessage(currentTab.id, {tenantCode: tenantCode});
+        }
     });
 });
