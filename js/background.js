@@ -15,11 +15,7 @@ chromeOrBrowser().browserAction.onClicked.addListener(function(currentTab) {
             }
         }
 
-        chromeOrBrowser().tabs.executeScript(null, {
-            file: "/js/bookmarker.js",
-            runAt: 'document_end'
-        }, function () {
-            chromeOrBrowser().tabs.sendMessage(currentTab.id, {tenantCode: tenantCode});
-        });
+        console.log(new Date().getTime() + ': background.js: already have bookmarker.js SENDING');
+        chromeOrBrowser().tabs.sendMessage(currentTab.id, {tenantCode: tenantCode});
     });
 });

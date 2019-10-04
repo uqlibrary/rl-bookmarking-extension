@@ -14,7 +14,7 @@
         "persistent": false
     },
     "permissions": [
-        "activeTab", "storage", "https://talis-public.talis.com/*"
+        "activeTab", "storage", "https://talis-public.talis.com/*", "*://*/*"
     ],
     "options_ui": {
         "page": "options.html",
@@ -33,6 +33,14 @@
             "40": "images/icon40.png"
           }
     },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["js/bookmarker.js"]
+        }
+    ],
     "default_locale": "en",
     "manifest_version": 2
 }
