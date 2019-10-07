@@ -31,6 +31,9 @@ $(function() {
 
 function loadTenantList() {
     getActiveTenant(function(activeTenant) {
+        if (!activeTenant) {
+            $('#optionsHelp').html('<div class="alert alert-warning">' + chromeOrBrowser().i18n.getMessage('noTenantAlert') + '</div>');
+        }
         $('#tenantCode').val(activeTenant);
         getTenants(function(tenants) {
             var matched = false;

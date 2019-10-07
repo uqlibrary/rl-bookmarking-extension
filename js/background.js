@@ -3,27 +3,21 @@
  *
  * This only does anything when the bookmarking button is clicked
  */
-chromeOrBrowser().browserAction.onClicked.addListener(function(tab) {
+chromeOrBrowser().browserAction.onClicked.addListener(function(currentTab) {
     // If no institution has been set, go to the options page to set one
     getActiveTenant(function (tenantCode) {
         if (!tenantCode) {
-            if (window.confirm(chromeOrBrowser().i18n.getMessage('noTenantAlert'))) {
-                // browser.runtime.openOptionsPage() not supported by ms-edge, so here's a workaround
-                chromeOrBrowser().tabs.create({
-                    url: chromeOrBrowser().extension.getURL("options.html")
-                  });
-            }
+            // browser.runtime.openOptionsPage() not supported by ms-edge, so here's a workaround
+            chromeOrBrowser().tabs.create({
+                url: chromeOrBrowser().extension.getURL("options.html")
+            });
+        } else {
+            chromeOrBrowser().tabs.executeScript(null, {
+                file: "/js/bookmarker.js",
+                runAt: 'document_end'
+            }, function () {
+                chromeOrBrowser().tabs.sendMessage(currentTab.id, {tenantCode: tenantCode});
+            });
         }
-
-        chromeOrBrowser().tabs.executeScript(null, {
-            file: "/js/bookmarker.js",
-            runAt: 'document_end'
-        });
-
-        chromeOrBrowser().tabs.query({active: true, currentWindow: true}, function(tabs) {
-            chromeOrBrowser().tabs.sendMessage(tabs[0].id, {tenantCode: tenantCode});
-            return true;
-        });
-        return true;
     });
 });
