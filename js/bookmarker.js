@@ -12,8 +12,10 @@
    * @param {String} tenantCode
    */
   function bookmarkPage(tenantCode) {
-    if (document.getElementById('bookmarkingScript')) {
-      document.getElementById('bookmarkingScript').remove();
+    var bookmarkingScriptId = '__talis_' + tenantCode + '_bookmarkingScript';
+
+    if (document.getElementById(bookmarkingScriptId)) {
+      document.getElementById(bookmarkingScriptId).remove();
     }
 
     var bookmarker = document.createElement('script');
@@ -23,7 +25,7 @@
         encodeURIComponent(encodeURI(window.location.href)) + '&bookmarkVersion=1&title=' +
         encodeURIComponent(document.title) + '&hasJquery=no'
     );
-    bookmarker.setAttribute('id', 'bookmarkingScript');
+    bookmarker.setAttribute('id', bookmarkingScriptId);
 
     if (document.body) {
       document.body.appendChild(bookmarker);
