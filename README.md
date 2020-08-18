@@ -2,9 +2,9 @@ Talis Aspire Reading Lists Bookmarking Extension
 ================================================
 
 Requirements:
-- [npm](https://www.npmjs.com/)
+- [nvm](https://github.com/nvm-sh/nvm)
 
-This project provides an alternative to the Talis Aspire Reading Lists Bookmarking Bookmarklet, 
+This project provides an alternative to the Talis Aspire Reading Lists Bookmarking Bookmarklet,
 which can be forked and rebranded for distribution in institutional enterprise environments.
 
 The extension should work with:
@@ -38,13 +38,17 @@ The different sizes will be used by different browsers in different ways.
 
 All strings in the extension can be edited by changing the values in the language files in the `_locales` directory.
 
-To build the files for the extension, 
-```
+To build the files for the extension,
+```bash
+$ git checkout https://github.com/talis/rl-bookmarking-extension.git
+$ cd rl-bookmarking-extension
+# use nvm to switch to the version of nodejs that is required
+$ nvm use
 $ npm install # This should also run bower install
 # replace ./images/*.png and ./_locales with institutional preferences
-$ grunt # This will build a Chrome/Opera/Vivaldi extension
-$ grunt dist-manifold # This will build a [Manifoldjs](https://github.com/pwa-builder/ManifoldJS) compatible manifest, which can be used to package an MS Edge extension
-$ grunt --identifier="{AMO UUID}" # This will build the extension with a Mozilla Add-on Identifier
+$ $(npm bin)/grunt # This will build a Chrome/Opera/Vivaldi extension
+$ $(npm bin)/grunt dist-manifold # This will build a [Manifoldjs](https://github.com/pwa-builder/ManifoldJS) compatible manifest, which can be used to package an MS Edge extension
+$ $(npm bin)/grunt --identifier="{AMO UUID}" # This will build the extension with a Mozilla Add-on Identifier
 ```
 
 The `./dist` directory should then contain everything you need for a `.crx`, `.xpi`, `.zip`, etc.
