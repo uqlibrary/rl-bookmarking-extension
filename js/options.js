@@ -1,22 +1,27 @@
 
 $(function() {
-
-    
     $('#tenantList').on('change', function() {
         $('#tenantCode').val($('#tenantList').val());
         if ($('#specifyTenant:selected').length > 0) {
             $('#manualEntry').removeClass('hidden');
-        } else {            
+        } else {
             $('#manualEntry').addClass('hidden');
         }
     });
     $('#save').on('click', function() {
-        saveActiveTenant($('#tenantCode').val(), function() {
-            // Update status to let user know options were saved.
-            $('#status').html('<div class="alert alert-success">' + chromeOrBrowser().i18n.getMessage('optionsSettingsSaved') + '</div>');
-            setTimeout(function() {
-                $('#status').textContent = '';
-            }, 750);
+        getTenants(function(tenants) {
+            for (var tenantCode in tenants) {
+                if (tenantCode == $('#tenantCode').val()) {
+                  saveActiveTenant(tenants[tenantCode], function() {
+                    // Update status to let user know options were saved.
+                    $('#status').html('<div class="alert alert-success">' + chromeOrBrowser().i18n.getMessage('optionsSettingsSaved') + '</div>');
+                    $('#optionsHelp').addClass('hidden');
+                    setTimeout(function() {
+                      $('#status').textContent = '';
+                    }, 750);
+                  });
+                }
+            }
         });
     });
 
@@ -34,15 +39,15 @@ function loadTenantList() {
         if (!activeTenant) {
             $('#optionsHelp').html('<div class="alert alert-warning">' + chromeOrBrowser().i18n.getMessage('noTenantAlert') + '</div>');
         }
-        $('#tenantCode').val(activeTenant);
+
         getTenants(function(tenants) {
             var matched = false;
             for (var tenantCode in tenants) {
-                if (tenantCode == activeTenant) {
+                if (activeTenant && tenantCode == activeTenant.code) {
                     matched = true;
-                    $('#tenantList option:last-of-type').before('<option class="tenantCode" value="' + tenantCode + '" selected>' + tenants[tenantCode] + '</option>');
+                    $('#tenantList option:last-of-type').before('<option class="tenantCode" value="' + tenantCode + '" selected>' + tenants[tenantCode].name + '</option>');
                 } else {
-                    $('#tenantList option:last-of-type').before('<option class="tenantCode" value="' + tenantCode + '">' + tenants[tenantCode] + '</option>');
+                    $('#tenantList option:last-of-type').before('<option class="tenantCode" value="' + tenantCode + '">' + tenants[tenantCode].name + '</option>');
                 }
             }
             if (activeTenant && !matched) {
@@ -50,5 +55,5 @@ function loadTenantList() {
                 $('#manualEntry').removeClass('hidden');
             }
         });
-    });    
+    });
 }

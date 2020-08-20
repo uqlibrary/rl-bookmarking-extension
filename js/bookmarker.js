@@ -11,17 +11,23 @@
    *
    * @param {String} tenantCode
    */
-  function bookmarkPage(tenantCode) {
-    var bookmarkingScriptId = '__talis_' + tenantCode + '_bookmarkingScript';
+  function bookmarkPage(tenant) {
+    var bookmarkingScriptId = '__talis_' + tenant.code + '_bookmarkingScript';
 
     if (document.getElementById(bookmarkingScriptId)) {
       document.getElementById(bookmarkingScriptId).remove();
     }
 
     var bookmarker = document.createElement('script');
+    var bookmarkingEndpoint = (
+      tenant.region == 'CA' ?
+      'https://bookmarking.ca.talis.com' :
+      'https://bookmarking.talis.com'
+    );
+
     bookmarker.setAttribute(
         'src',
-        'https://bookmarking.talis.com/' + tenantCode + '/parser?bookmarkButtonVersion=1&uri=' +
+        bookmarkingEndpoint + '/' + tenant.code + '/parser?bookmarkButtonVersion=1&uri=' +
         encodeURIComponent(encodeURI(window.location.href)) + '&bookmarkVersion=1&title=' +
         encodeURIComponent(document.title) + '&hasJquery=no'
     );
@@ -33,6 +39,6 @@
   }
 
   chromeOrBrowser().runtime.onMessage.addListener(function (message) {
-    bookmarkPage(message.tenantCode);
+    bookmarkPage(message.tenant);
   });
 })();

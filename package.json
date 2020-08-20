@@ -4,7 +4,8 @@
   "description": "A browser extension to bookmark resources to Talis Aspire Reading Lists",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0"
+    "grunt-contrib-copy": "^1.0.0",
+    "manifoldjs": "^0.7.6"
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
