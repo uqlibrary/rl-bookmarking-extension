@@ -20,7 +20,7 @@
 
     var bookmarker = document.createElement('script');
     var bookmarkingEndpoint = (
-      tenant.region == 'CA' ?
+      tenant.region === 'CA' ?
       'https://bookmarking.ca.talis.com' :
       'https://bookmarking.talis.com'
     );

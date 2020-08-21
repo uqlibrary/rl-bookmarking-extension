@@ -11,7 +11,7 @@ $(function() {
     $('#save').on('click', function() {
         getTenants(function(tenants) {
             for (var tenantCode in tenants) {
-                if (tenantCode == $('#tenantCode').val()) {
+                if (tenantCode === $('#tenantCode').val()) {
                   saveActiveTenant(tenants[tenantCode], function() {
                     // Update status to let user know options were saved.
                     $('#status').html('<div class="alert alert-success">' + chromeOrBrowser().i18n.getMessage('optionsSettingsSaved') + '</div>');
