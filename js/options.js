@@ -43,7 +43,7 @@ function loadTenantList() {
         getTenants(function(tenants) {
             var matched = false;
             for (var tenantCode in tenants) {
-                if (activeTenant && tenantCode == activeTenant.code) {
+                if (activeTenant && tenantCode === activeTenant.code) {
                     matched = true;
                     $('#tenantList option:last-of-type').before('<option class="tenantCode" value="' + tenantCode + '" selected>' + tenants[tenantCode].name + '</option>');
                 } else {
