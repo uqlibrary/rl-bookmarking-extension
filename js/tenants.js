@@ -16,7 +16,7 @@ if (!storage) {
 /**
  * @callback activeTenant
  *
- * @param {string} tenantCode - Currently active tenant code
+ * @param {object} tenant - Currently active tenant
  */
 /**
  * Returns the saved 'active' tenant from browser storage
@@ -43,23 +43,23 @@ function getActiveTenant(cb) {
 }
 
 /**
- * Stores the preferred tenantCode in browser storage
+ * Stores the preferred tenant in browser storage
  *
- * @param {string}     tenantCode
+ * @param {object}     tenant
  * @param {function()} cb - Callback to run once stored
  */
-function saveActiveTenant(tenantCode, cb) {
+function saveActiveTenant(tenant, cb) {
     storage.set({
-        activeTenant: tenantCode
+        activeTenant: tenant
     }, function() {
         if (chromeOrBrowser().runtime.lastError) {
             storage = chromeOrBrowser().storage.local;
-            return saveActiveTenant(tenantCode, cb);
+            return saveActiveTenant(tenant, cb);
         } else {
             getActiveTenant(function(t) {
                 if (typeof t === 'undefined') {
                     storage = chromeOrBrowser().storage.local;
-                    return saveActiveTenant(tenantCode, cb);
+                    return saveActiveTenant(tenant, cb);
                 } else {
                     cb();
                 }
@@ -84,8 +84,11 @@ function getTenants(cb) {
     var tenants = {};
     getTenantList(function(tenantList) {
         for (var code in tenantList) {
-            if (tenantList[code].hasOwnProperty('apps') && tenantList[code].apps.hasOwnProperty('rl')) {
-                tenants[code] = tenantList[code].name;
+            var tenant = tenantList[code];
+            tenant.code = code;
+
+            if (tenant.hasOwnProperty('apps') && tenant.apps.hasOwnProperty('rl')) {
+                tenants[code] = tenant;
             }
         }
         cb(tenants);

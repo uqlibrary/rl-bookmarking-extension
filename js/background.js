@@ -5,8 +5,8 @@
  */
 chromeOrBrowser().browserAction.onClicked.addListener(function(currentTab) {
     // If no institution has been set, go to the options page to set one
-    getActiveTenant(function (tenantCode) {
-        if (!tenantCode) {
+    getActiveTenant(function (tenant) {
+        if (!tenant) {
             // browser.runtime.openOptionsPage() not supported by ms-edge, so here's a workaround
             chromeOrBrowser().tabs.create({
                 url: chromeOrBrowser().extension.getURL("options.html")
@@ -16,7 +16,7 @@ chromeOrBrowser().browserAction.onClicked.addListener(function(currentTab) {
                 file: "/js/bookmarker.js",
                 runAt: 'document_end'
             }, function () {
-                chromeOrBrowser().tabs.sendMessage(currentTab.id, {tenantCode: tenantCode});
+                chromeOrBrowser().tabs.sendMessage(currentTab.id, {tenant: tenant});
             });
         }
     });
