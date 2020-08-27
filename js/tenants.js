@@ -34,12 +34,58 @@ function getActiveTenant(cb) {
                 if (tenants.activeTenant) {
                     storage = chromeOrBrowser().storage.local;
                 }
-                return cb(tenants.activeTenant);
+
+                convertActiveTenantToObject(tenants.activeTenant, function(updatedTenant){
+                  return cb(updatedTenant);
+                });
             });
         } else {
-            return cb(tenants.activeTenant);
+            convertActiveTenantToObject(tenants.activeTenant, function(updatedTenant){
+              return cb(updatedTenant);
+            });
         }
     });
+}
+
+/**
+ * Checks to see if the active tenant is stored as a simple
+ * string, if so converts to an object and overwrites the
+ * value currently stored in browser storage.
+ *
+ * @param {object}     tenant
+ * @param {function()} cb - Callback to run once updated
+ */
+function convertActiveTenantToObject(activeTenant, cb) {
+  if (!activeTenant) {
+    // if the activeTenant is null or undefined then
+    // simply return null, and let the extension
+    // force the user to the options pane
+    return cb(null);
+  }
+
+  if (activeTenant.region) {
+    // if the activeTenant has a region property
+    // then, its an object just continue.
+    return cb(activeTenant);
+  } else {
+    // if the active tenant doesn't have a region property
+    // then it's going to be a simple string. Retrieve the
+    // complete tenants list and find the tenant object, then
+    // overwrite active tenant in local storage with the object
+    // and return it.
+    getTenants(function(updatedTenantsList) {
+      var updatedTenant = updatedTenantsList[activeTenant];
+      if (updatedTenant) {
+        saveActiveTenant(updatedTenant, function() {
+          return cb(updatedTenant);
+        });
+      } else {
+        // return null which will
+        // force the user to the options pane
+        return cb(null);
+      }
+    });
+  }
 }
 
 /**
