@@ -158,3 +158,21 @@ function getTenantList(cb) {
         cb(tenants);
     });
 }
+
+/**
+ * Simple helper function that returns a tenant object based on a specified
+ * code and region
+ *
+ * @param {string} tenantCode - the tenant short code
+ * @param {string} tenantRegion - the region for this tenancy
+ */
+function buildTenant(tenantCode, tenantRegion) {
+  return {
+    "name" : tenantCode,
+    "code" : tenantCode,
+    "apps" : {
+      "rl" : true
+    },
+    "region" : tenantRegion
+  }
+}

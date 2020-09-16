@@ -31,13 +31,24 @@
                 <button id="save" data-message="optionsSave">Save</button>
             </div>
         </div>
-        <div class="row hidden" id="manualEntry">
-            <div class="col-xs-2" data-message="optionsShortCodeLabel">Short code:</div>
-            <div class="col-xs-8">
-                <input type="text" id="tenantCode" />
+        <div class="hidden" id="manualEntry">
+            <div class="row">
+                <div class="col-xs-2" data-message="optionsShortCodeLabel">Short code:</div>
+                <div class="col-xs-2">
+                    <input type="text" id="tenantCode" />
+                </div>
             </div>
+            <div class="row">
+                <div class="col-xs-2" data-message="optionsRegionLabel">Region:</div>
+                <div class="col-xs-2">
+                    <select id="tenantRegion">
+                        <option value="" data-message="optionsChooseOneOptionLabel">Choose one</option>
+                        <option id="EUAPAC" value="EUAPAC" data-message="optionsRegionEUAPACLabel">EU / APAC</option>
+                        <option id="CA" value="CA" data-message="optionsRegionCALabel">Canada</option>
+                    </select>
+                </div>
+                </div>
         </div>
-
     </div>
 </body>
 </html>

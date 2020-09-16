@@ -9,20 +9,21 @@ $(function() {
         }
     });
     $('#save').on('click', function() {
-        getTenants(function(tenants) {
-            for (var tenantCode in tenants) {
-                if (tenantCode === $('#tenantCode').val()) {
-                  saveActiveTenant(tenants[tenantCode], function() {
-                    // Update status to let user know options were saved.
-                    $('#status').html('<div class="alert alert-success">' + chromeOrBrowser().i18n.getMessage('optionsSettingsSaved') + '</div>');
-                    $('#optionsHelp').addClass('hidden');
-                    setTimeout(function() {
-                      $('#status').textContent = '';
-                    }, 750);
-                  });
+        if ($('#specifyTenant:selected').length > 0) {
+            var otherTenantCode = $('#tenantCode').val();
+            var otherTenantRegion = $('#tenantRegion').val();
+            saveActiveTenantAndUpdateStatus(
+                buildTenant(otherTenantCode, otherTenantRegion)
+            );
+        } else {
+            getTenants(function(tenants) {
+                for (var tenantCode in tenants) {
+                    if (tenantCode === $('#tenantCode').val()) {
+                        saveActiveTenantAndUpdateStatus(tenants[tenantCode]);
+                    }
                 }
-            }
-        });
+            });
+        }
     });
 
     var objects = document.getElementsByTagName('*'), i;
@@ -33,6 +34,17 @@ $(function() {
     }
     loadTenantList();
 });
+
+function saveActiveTenantAndUpdateStatus(tenant) {
+    saveActiveTenant(tenant, function() {
+        // Update status to let user know options were saved.
+        $('#status').html('<div class="alert alert-success">' + chromeOrBrowser().i18n.getMessage('optionsSettingsSaved') + '</div>');
+        $('#optionsHelp').addClass('hidden');
+        setTimeout(function() {
+            $('#status').textContent = '';
+        }, 750);
+    });
+}
 
 function loadTenantList() {
     getActiveTenant(function(activeTenant) {

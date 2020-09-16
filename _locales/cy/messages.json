@@ -6,7 +6,7 @@
     "description": {
         "message": "Talis Aspire Rhestrau Darllen Offeryn Nod Tudalen",
         "description": "Extension description"
-    },    
+    },
     "browserActionTitle": {
         "message": "Ychwanegu Llyfrnod at Rhestr Ddarllen",
         "description": "Message when hovering over extension button"
@@ -30,6 +30,18 @@
     "optionsOtherOptionLabel": {
         "message": "Arall",
         "description": "Manually specify tenant short code option"
+    },
+    "optionsRegionLabel": {
+        "message": "Rhanbarth",
+        "description": "Manually specify region for the given tenant short code optionu"
+    },
+    "optionsRegionEUAPACLabel": {
+        "message": "EU / APAC",
+        "description": "This option sets the region to EU / APAC"
+    },
+    "optionsRegionCALabel": {
+        "message": "CA",
+        "description": "This option sets the region to CA"
     },
     "optionsShortCodeLabel": {
         "message": "Cod byr:",
