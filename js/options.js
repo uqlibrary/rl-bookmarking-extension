@@ -12,6 +12,17 @@ $(function() {
         if ($('#specifyTenant:selected').length > 0) {
             var otherTenantCode = $('#tenantCode').val();
             var otherTenantRegion = $('#tenantRegion').val();
+
+            if (!otherTenantCode.trim()) {
+                $('#optionsHelp').html('<div class="alert alert-danger">' + chromeOrBrowser().i18n.getMessage('noTenantShortCodeAlert') + '</div>');
+                return;
+            }
+
+            if (!otherTenantRegion.trim()) {
+                $('#optionsHelp').html('<div class="alert alert-danger">' + chromeOrBrowser().i18n.getMessage('noTenantRegionAlert') + '</div>');
+                return;
+            }
+
             saveActiveTenantAndUpdateStatus(
                 buildTenant(otherTenantCode, otherTenantRegion)
             );

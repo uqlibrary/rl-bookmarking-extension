@@ -58,5 +58,13 @@
     "noTenantAlert": {
         "message": "Please specify an institution in extension settings",
         "description": "Alert presented if no institution has been set"
+    },
+    "noTenantShortCodeAlert": {
+        "message": "When selecting Other you must specify a tenant short code",
+        "description": "Alert presented if Other institution is selected but no short code is provided"
+    },
+    "noTenantRegionAlert": {
+        "message": "When selecting Other you must specify a region",
+        "description": "Alert presented if Other institution is selected but no region is provided"
     }
 }
