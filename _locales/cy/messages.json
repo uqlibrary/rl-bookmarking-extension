@@ -36,11 +36,11 @@
         "description": "Manually specify region for the given tenant short code option"
     },
     "optionsRegionEUAPACLabel": {
-        "message": "EU / APAC",
+        "message": "Ewrop / Asia Môr Tawel",
         "description": "This option sets the region to EU / APAC"
     },
     "optionsRegionCALabel": {
-        "message": "CA",
+        "message": "Canada",
         "description": "This option sets the region to CA"
     },
     "optionsShortCodeLabel": {
