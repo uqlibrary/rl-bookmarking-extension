@@ -33,7 +33,7 @@
     },
     "optionsRegionLabel": {
         "message": "Rhanbarth",
-        "description": "Manually specify region for the given tenant short code optionu"
+        "description": "Manually specify region for the given tenant short code option"
     },
     "optionsRegionEUAPACLabel": {
         "message": "EU / APAC",
