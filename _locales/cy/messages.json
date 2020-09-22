@@ -6,7 +6,7 @@
     "description": {
         "message": "Talis Aspire Rhestrau Darllen Offeryn Nod Tudalen",
         "description": "Extension description"
-    },    
+    },
     "browserActionTitle": {
         "message": "Ychwanegu Llyfrnod at Rhestr Ddarllen",
         "description": "Message when hovering over extension button"
@@ -31,6 +31,18 @@
         "message": "Arall",
         "description": "Manually specify tenant short code option"
     },
+    "optionsRegionLabel": {
+        "message": "Rhanbarth",
+        "description": "Manually specify region for the given tenant short code option"
+    },
+    "optionsRegionEUAPACLabel": {
+        "message": "Ewrop / Asia Môr Tawel",
+        "description": "This option sets the region to EU / APAC"
+    },
+    "optionsRegionCALabel": {
+        "message": "Canada",
+        "description": "This option sets the region to CA"
+    },
     "optionsShortCodeLabel": {
         "message": "Cod byr:",
         "description": "Manually add tenant by short code input label"
@@ -46,5 +58,13 @@
     "noTenantAlert": {
         "message": "Nodwch sefydliad mewn lleoliadau ymestyn",
         "description": "Alert presented if no institution has been set"
+    },
+    "noTenantShortCodeAlert": {
+        "message": "Wrth ddewis Arall rhaid i chi nodi cod byr tenant",
+        "description": "Alert presented if Other institution is selected but no short code is provided"
+    },
+    "noTenantRegionAlert": {
+        "message": "Wrth ddewis Arall rhaid i chi nodi rhanbarth",
+        "description": "Alert presented if Other institution is selected but no region is provided"
     }
 }
