@@ -1,3 +1,4 @@
+import {buildTenant, chromeOrBrowser, getActiveTenant, getTenants, saveActiveTenant} from "./tenants";
 
 $(function() {
     $('#tenantList').on('change', function() {
@@ -10,8 +11,8 @@ $(function() {
     });
     $('#save').on('click', function() {
         if ($('#specifyTenant:selected').length > 0) {
-            var otherTenantCode = $('#tenantCode').val();
-            var otherTenantRegion = $('#tenantRegion').val();
+            const otherTenantCode = $('#tenantCode').val();
+            const otherTenantRegion = $('#tenantRegion').val();
 
             if (!otherTenantCode.trim()) {
                 $('#optionsHelp').html('<div class="alert alert-danger">' + chromeOrBrowser().i18n.getMessage('noTenantShortCodeAlert') + '</div>');
@@ -64,8 +65,8 @@ function loadTenantList() {
         }
 
         getTenants(function(tenants) {
-            var matched = false;
-            for (var tenantCode in tenants) {
+            let matched = false;
+            for (const tenantCode in tenants) {
                 if (activeTenant && tenantCode === activeTenant.code) {
                     matched = true;
                     $('#tenantList option:last-of-type').before('<option class="tenantCode" value="' + tenantCode + '" selected>' + tenants[tenantCode].name + '</option>');

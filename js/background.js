@@ -1,3 +1,5 @@
+import {chromeOrBrowser, getActiveTenant} from "./tenants";
+
 /**
  * Background script.
  *
