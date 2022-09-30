@@ -20,7 +20,7 @@ chromeOrBrowser().browserAction.onClicked.addListener(function (currentTab) {
         if (!tenant) {
             // browser.runtime.openOptionsPage() not supported by ms-edge, so here's a workaround
             chromeOrBrowser().tabs.create({
-                url: chromeOrBrowser().extension.getURL("options.html")
+                url: 'options.html'
             });
         } else {
             chromeOrBrowser().scripting.executeScript(
