@@ -1,9 +1,9 @@
 {
     "name": "__MSG_extensionName__",
     "author": "Talis Education Limited",
-    "description":"__MSG_description__",
+    "description": "__MSG_description__",
     "version": "__VERSION__",
-    "icons":  {
+    "icons": {
         "16": "images/icon16.png",
         "48": "images/icon48.png",
         "128": "images/icon128.png",
@@ -14,7 +14,11 @@
         "type": "module"
     },
     "permissions": [
-        "activeTab", "storage", "https://talis-public.talis.com/*"
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://talis-public.talis.com/*"
     ],
     "options_ui": {
         "page": "options.html",
@@ -31,7 +35,7 @@
             "30": "images/icon30.png",
             "32": "images/icon32.png",
             "40": "images/icon40.png"
-          }
+        }
     },
     "default_locale": "en",
     "manifest_version": 3
