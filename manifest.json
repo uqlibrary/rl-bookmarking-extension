@@ -10,7 +10,7 @@
         "176": "images/icon176.png"
     },
     "background": {
-        "service_worker": "background.js",
+        "service_worker": "importBackgroundScripts.js",
         "type": "module"
     },
     "permissions": [
