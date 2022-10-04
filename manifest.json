@@ -38,10 +38,6 @@
             "40": "images/icon40.png"
         }
     },
-    "content_security_policy": {
-        "extension_pages": "script-src 'self'; object-src 'self'",
-        "sandbox": "sandbox allow-scripts; script-src 'self' object-src 'self'"
-    },
     "default_locale": "en",
     "manifest_version": 3
 }
