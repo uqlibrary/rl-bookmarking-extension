@@ -94,7 +94,7 @@ function convertActiveTenantToObject(activeTenant, cb) {
  * @param {object}     tenant
  * @param {function()} cb - Callback to run once stored
  */
-function saveActiveTenant(tenant, cb) {
+export function saveActiveTenant(tenant, cb) {
     storage.set({
         activeTenant: tenant
     }, function() {
@@ -126,7 +126,7 @@ function saveActiveTenant(tenant, cb) {
  *
  * @param {allTenants} cb
  */
-function getTenants(cb) {
+export function getTenants(cb) {
     var tenants = {};
     getTenantList(function(tenantList) {
         for (var code in tenantList) {
@@ -166,7 +166,7 @@ function getTenantList(cb) {
  * @param {string} tenantCode - the tenant short code
  * @param {string} tenantRegion - the region for this tenancy
  */
-function buildTenant(tenantCode, tenantRegion) {
+export function buildTenant(tenantCode, tenantRegion) {
   return {
     "name" : tenantCode,
     "code" : tenantCode,

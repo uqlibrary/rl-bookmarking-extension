@@ -52,7 +52,7 @@ async function bookmark() {
                       target: {tabId: tab.id},
                       files: ['/js/bookmarker.js']
                   }, function () {
-                      chrome.tabs.sendMessage(currentTab.id, {tenant: tenant});
+                      chrome.tabs.sendMessage(tab.id, {tenant: tenant});
                   });
             }
         });

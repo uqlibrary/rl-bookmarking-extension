@@ -1,4 +1,4 @@
-import {getActiveTenant} from "./tenants";
+import {buildTenant, getActiveTenant, getTenants, saveActiveTenant} from "./tenants.js";
 
 $(function() {
     $('#tenantList').on('change', function() {
