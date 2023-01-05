@@ -33,6 +33,12 @@
             "40": "images/icon40.png"
           }
     },
+    "content_scripts": [
+        {
+          "matches": ["https://rl.talis.com/*", "https://rl.ca.talis.com/*", "https://life.rl.talis.local/*", "https://*.rl.talis.com/*"],
+          "css": ["css/banner.css"]
+        }
+      ],    
     "default_locale": "en",
     "manifest_version": 2
 }
