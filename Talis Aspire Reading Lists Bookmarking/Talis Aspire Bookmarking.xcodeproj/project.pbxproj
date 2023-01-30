@@ -1,0 +1,970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F57C1713298468920049A458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57C1712298468920049A458 /* AppDelegate.swift */; };
+		F57C1715298468920049A458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57C1714298468920049A458 /* SceneDelegate.swift */; };
+		F57C1718298468920049A458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57C1716298468920049A458 /* LaunchScreen.storyboard */; };
+		F57C171B298468920049A458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57C1719298468920049A458 /* Main.storyboard */; };
+		F57C1724298468920049A458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57C1723298468920049A458 /* AppDelegate.swift */; };
+		F57C1727298468920049A458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57C1725298468920049A458 /* Main.storyboard */; };
+		F57C172F298468920049A458 /* Talis Aspire Bookmarking Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F57C172E298468920049A458 /* Talis Aspire Bookmarking Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F57C1739298468930049A458 /* Talis Aspire Bookmarking Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F57C1738298468930049A458 /* Talis Aspire Bookmarking Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F57C173F298468930049A458 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F57C17022984688F0049A458 /* Main.html */; };
+		F57C1740298468930049A458 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F57C17022984688F0049A458 /* Main.html */; };
+		F57C1741298468930049A458 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F57C17042984688F0049A458 /* Icon.png */; };
+		F57C1742298468930049A458 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F57C17042984688F0049A458 /* Icon.png */; };
+		F57C1743298468930049A458 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F57C17052984688F0049A458 /* Style.css */; };
+		F57C1744298468930049A458 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F57C17052984688F0049A458 /* Style.css */; };
+		F57C1745298468930049A458 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F57C17062984688F0049A458 /* Script.js */; };
+		F57C1746298468930049A458 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F57C17062984688F0049A458 /* Script.js */; };
+		F57C1747298468930049A458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57C17072984688F0049A458 /* ViewController.swift */; };
+		F57C1748298468930049A458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57C17072984688F0049A458 /* ViewController.swift */; };
+		F57C1749298468930049A458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57C1708298468920049A458 /* Assets.xcassets */; };
+		F57C174A298468930049A458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57C1708298468920049A458 /* Assets.xcassets */; };
+		F57C174B298468930049A458 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57C170A298468920049A458 /* SafariWebExtensionHandler.swift */; };
+		F57C174C298468930049A458 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57C170A298468920049A458 /* SafariWebExtensionHandler.swift */; };
+		F57C1766298468930049A458 /* css in Resources */ = {isa = PBXBuildFile; fileRef = F57C175E298468930049A458 /* css */; };
+		F57C1767298468930049A458 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F57C175F298468930049A458 /* images */; };
+		F57C1768298468930049A458 /* js in Resources */ = {isa = PBXBuildFile; fileRef = F57C1760298468930049A458 /* js */; };
+		F57C1769298468930049A458 /* dependencies in Resources */ = {isa = PBXBuildFile; fileRef = F57C1761298468930049A458 /* dependencies */; };
+		F57C176A298468930049A458 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F57C1762298468930049A458 /* manifest.json */; };
+		F57C176B298468930049A458 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = F57C1763298468930049A458 /* options.html */; };
+		F57C176C298468930049A458 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = F57C1764298468930049A458 /* background.html */; };
+		F57C176D298468930049A458 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = F57C1765298468930049A458 /* _locales */; };
+		F57C176E298468930049A458 /* css in Resources */ = {isa = PBXBuildFile; fileRef = F57C175E298468930049A458 /* css */; };
+		F57C176F298468930049A458 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F57C175F298468930049A458 /* images */; };
+		F57C1770298468930049A458 /* js in Resources */ = {isa = PBXBuildFile; fileRef = F57C1760298468930049A458 /* js */; };
+		F57C1771298468930049A458 /* dependencies in Resources */ = {isa = PBXBuildFile; fileRef = F57C1761298468930049A458 /* dependencies */; };
+		F57C1772298468930049A458 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F57C1762298468930049A458 /* manifest.json */; };
+		F57C1773298468930049A458 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = F57C1763298468930049A458 /* options.html */; };
+		F57C1774298468930049A458 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = F57C1764298468930049A458 /* background.html */; };
+		F57C1775298468930049A458 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = F57C1765298468930049A458 /* _locales */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F57C1730298468920049A458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57C16FC2984688F0049A458 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57C172D298468920049A458;
+			remoteInfo = "Talis Aspire Reading Lists Bookmarking Extension (iOS)";
+		};
+		F57C173A298468930049A458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57C16FC2984688F0049A458 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57C1737298468930049A458;
+			remoteInfo = "Talis Aspire Reading Lists Bookmarking Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F57C1752298468930049A458 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F57C172F298468920049A458 /* Talis Aspire Bookmarking Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C1759298468930049A458 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F57C1739298468930049A458 /* Talis Aspire Bookmarking Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F57C17032984688F0049A458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		F57C17042984688F0049A458 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F57C17052984688F0049A458 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		F57C17062984688F0049A458 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		F57C17072984688F0049A458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F57C1708298468920049A458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F57C170A298468920049A458 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		F57C170F298468920049A458 /* Talis Aspire Bookmarking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talis Aspire Bookmarking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57C1712298468920049A458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F57C1714298468920049A458 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F57C1717298468920049A458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F57C171A298468920049A458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F57C171C298468920049A458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57C1721298468920049A458 /* Talis Aspire Bookmarking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talis Aspire Bookmarking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57C1723298468920049A458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F57C1726298468920049A458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F57C1728298468920049A458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57C1729298468920049A458 /* Talis Aspire Reading Lists Bookmarking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Talis Aspire Reading Lists Bookmarking.entitlements"; sourceTree = "<group>"; };
+		F57C172E298468920049A458 /* Talis Aspire Bookmarking Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Talis Aspire Bookmarking Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57C1733298468920049A458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57C1738298468930049A458 /* Talis Aspire Bookmarking Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Talis Aspire Bookmarking Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57C173D298468930049A458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57C173E298468930049A458 /* Talis Aspire Reading Lists Bookmarking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Talis Aspire Reading Lists Bookmarking.entitlements"; sourceTree = "<group>"; };
+		F57C175E298468930049A458 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = ../../dist/css; sourceTree = "<group>"; };
+		F57C175F298468930049A458 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../dist/images; sourceTree = "<group>"; };
+		F57C1760298468930049A458 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = ../../dist/js; sourceTree = "<group>"; };
+		F57C1761298468930049A458 /* dependencies */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dependencies; path = ../../dist/dependencies; sourceTree = "<group>"; };
+		F57C1762298468930049A458 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../dist/manifest.json; sourceTree = "<group>"; };
+		F57C1763298468930049A458 /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../dist/options.html; sourceTree = "<group>"; };
+		F57C1764298468930049A458 /* background.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = background.html; path = ../../dist/background.html; sourceTree = "<group>"; };
+		F57C1765298468930049A458 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../dist/_locales; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F57C170C298468920049A458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C171E298468920049A458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C172B298468920049A458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C1735298468930049A458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F57C16FB2984688F0049A458 = {
+			isa = PBXGroup;
+			children = (
+				F57C17002984688F0049A458 /* Shared (App) */,
+				F57C1709298468920049A458 /* Shared (Extension) */,
+				F57C1711298468920049A458 /* iOS (App) */,
+				F57C1722298468920049A458 /* macOS (App) */,
+				F57C1732298468920049A458 /* iOS (Extension) */,
+				F57C173C298468930049A458 /* macOS (Extension) */,
+				F57C1710298468920049A458 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F57C17002984688F0049A458 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F57C17072984688F0049A458 /* ViewController.swift */,
+				F57C1708298468920049A458 /* Assets.xcassets */,
+				F57C17012984688F0049A458 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		F57C17012984688F0049A458 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F57C17022984688F0049A458 /* Main.html */,
+				F57C17042984688F0049A458 /* Icon.png */,
+				F57C17052984688F0049A458 /* Style.css */,
+				F57C17062984688F0049A458 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F57C1709298468920049A458 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F57C175D298468930049A458 /* Resources */,
+				F57C170A298468920049A458 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		F57C1710298468920049A458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F57C170F298468920049A458 /* Talis Aspire Bookmarking.app */,
+				F57C1721298468920049A458 /* Talis Aspire Bookmarking.app */,
+				F57C172E298468920049A458 /* Talis Aspire Bookmarking Extension.appex */,
+				F57C1738298468930049A458 /* Talis Aspire Bookmarking Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F57C1711298468920049A458 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F57C1712298468920049A458 /* AppDelegate.swift */,
+				F57C1714298468920049A458 /* SceneDelegate.swift */,
+				F57C1716298468920049A458 /* LaunchScreen.storyboard */,
+				F57C1719298468920049A458 /* Main.storyboard */,
+				F57C171C298468920049A458 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		F57C1722298468920049A458 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F57C1723298468920049A458 /* AppDelegate.swift */,
+				F57C1725298468920049A458 /* Main.storyboard */,
+				F57C1728298468920049A458 /* Info.plist */,
+				F57C1729298468920049A458 /* Talis Aspire Reading Lists Bookmarking.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		F57C1732298468920049A458 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F57C1733298468920049A458 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		F57C173C298468930049A458 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F57C173D298468930049A458 /* Info.plist */,
+				F57C173E298468930049A458 /* Talis Aspire Reading Lists Bookmarking.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		F57C175D298468930049A458 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F57C175E298468930049A458 /* css */,
+				F57C175F298468930049A458 /* images */,
+				F57C1760298468930049A458 /* js */,
+				F57C1761298468930049A458 /* dependencies */,
+				F57C1762298468930049A458 /* manifest.json */,
+				F57C1763298468930049A458 /* options.html */,
+				F57C1764298468930049A458 /* background.html */,
+				F57C1765298468930049A458 /* _locales */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F57C170E298468920049A458 /* Talis Aspire Bookmarking (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57C1753298468930049A458 /* Build configuration list for PBXNativeTarget "Talis Aspire Bookmarking (iOS)" */;
+			buildPhases = (
+				F57C170B298468920049A458 /* Sources */,
+				F57C170C298468920049A458 /* Frameworks */,
+				F57C170D298468920049A458 /* Resources */,
+				F57C1752298468930049A458 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57C1731298468920049A458 /* PBXTargetDependency */,
+			);
+			name = "Talis Aspire Bookmarking (iOS)";
+			productName = "Talis Aspire Reading Lists Bookmarking (iOS)";
+			productReference = F57C170F298468920049A458 /* Talis Aspire Bookmarking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F57C1720298468920049A458 /* Talis Aspire Bookmarking (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57C175A298468930049A458 /* Build configuration list for PBXNativeTarget "Talis Aspire Bookmarking (macOS)" */;
+			buildPhases = (
+				F57C171D298468920049A458 /* Sources */,
+				F57C171E298468920049A458 /* Frameworks */,
+				F57C171F298468920049A458 /* Resources */,
+				F57C1759298468930049A458 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57C173B298468930049A458 /* PBXTargetDependency */,
+			);
+			name = "Talis Aspire Bookmarking (macOS)";
+			productName = "Talis Aspire Reading Lists Bookmarking (macOS)";
+			productReference = F57C1721298468920049A458 /* Talis Aspire Bookmarking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F57C172D298468920049A458 /* Talis Aspire Bookmarking Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57C174F298468930049A458 /* Build configuration list for PBXNativeTarget "Talis Aspire Bookmarking Extension (iOS)" */;
+			buildPhases = (
+				F57C172A298468920049A458 /* Sources */,
+				F57C172B298468920049A458 /* Frameworks */,
+				F57C172C298468920049A458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Talis Aspire Bookmarking Extension (iOS)";
+			productName = "Talis Aspire Reading Lists Bookmarking Extension (iOS)";
+			productReference = F57C172E298468920049A458 /* Talis Aspire Bookmarking Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F57C1737298468930049A458 /* Talis Aspire Bookmarking Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57C1756298468930049A458 /* Build configuration list for PBXNativeTarget "Talis Aspire Bookmarking Extension (macOS)" */;
+			buildPhases = (
+				F57C1734298468930049A458 /* Sources */,
+				F57C1735298468930049A458 /* Frameworks */,
+				F57C1736298468930049A458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Talis Aspire Bookmarking Extension (macOS)";
+			productName = "Talis Aspire Reading Lists Bookmarking Extension (macOS)";
+			productReference = F57C1738298468930049A458 /* Talis Aspire Bookmarking Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F57C16FC2984688F0049A458 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = Talis;
+				TargetAttributes = {
+					F57C170E298468920049A458 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F57C1720298468920049A458 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F57C172D298468920049A458 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F57C1737298468930049A458 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = F57C16FF2984688F0049A458 /* Build configuration list for PBXProject "Talis Aspire Bookmarking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F57C16FB2984688F0049A458;
+			productRefGroup = F57C1710298468920049A458 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F57C170E298468920049A458 /* Talis Aspire Bookmarking (iOS) */,
+				F57C1720298468920049A458 /* Talis Aspire Bookmarking (macOS) */,
+				F57C172D298468920049A458 /* Talis Aspire Bookmarking Extension (iOS) */,
+				F57C1737298468930049A458 /* Talis Aspire Bookmarking Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F57C170D298468920049A458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57C1741298468930049A458 /* Icon.png in Resources */,
+				F57C1718298468920049A458 /* LaunchScreen.storyboard in Resources */,
+				F57C173F298468930049A458 /* Main.html in Resources */,
+				F57C1745298468930049A458 /* Script.js in Resources */,
+				F57C1749298468930049A458 /* Assets.xcassets in Resources */,
+				F57C171B298468920049A458 /* Main.storyboard in Resources */,
+				F57C1743298468930049A458 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C171F298468920049A458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57C1742298468930049A458 /* Icon.png in Resources */,
+				F57C1744298468930049A458 /* Style.css in Resources */,
+				F57C1727298468920049A458 /* Main.storyboard in Resources */,
+				F57C1746298468930049A458 /* Script.js in Resources */,
+				F57C174A298468930049A458 /* Assets.xcassets in Resources */,
+				F57C1740298468930049A458 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C172C298468920049A458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57C1774298468930049A458 /* background.html in Resources */,
+				F57C176F298468930049A458 /* images in Resources */,
+				F57C1775298468930049A458 /* _locales in Resources */,
+				F57C1770298468930049A458 /* js in Resources */,
+				F57C1772298468930049A458 /* manifest.json in Resources */,
+				F57C176E298468930049A458 /* css in Resources */,
+				F57C1771298468930049A458 /* dependencies in Resources */,
+				F57C1773298468930049A458 /* options.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C1736298468930049A458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57C176C298468930049A458 /* background.html in Resources */,
+				F57C1767298468930049A458 /* images in Resources */,
+				F57C176D298468930049A458 /* _locales in Resources */,
+				F57C1768298468930049A458 /* js in Resources */,
+				F57C176A298468930049A458 /* manifest.json in Resources */,
+				F57C1766298468930049A458 /* css in Resources */,
+				F57C1769298468930049A458 /* dependencies in Resources */,
+				F57C176B298468930049A458 /* options.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F57C170B298468920049A458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57C1747298468930049A458 /* ViewController.swift in Sources */,
+				F57C1713298468920049A458 /* AppDelegate.swift in Sources */,
+				F57C1715298468920049A458 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C171D298468920049A458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57C1748298468930049A458 /* ViewController.swift in Sources */,
+				F57C1724298468920049A458 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C172A298468920049A458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57C174B298468930049A458 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C1734298468930049A458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57C174C298468930049A458 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F57C1731298468920049A458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F57C172D298468920049A458 /* Talis Aspire Bookmarking Extension (iOS) */;
+			targetProxy = F57C1730298468920049A458 /* PBXContainerItemProxy */;
+		};
+		F57C173B298468930049A458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F57C1737298468930049A458 /* Talis Aspire Bookmarking Extension (macOS) */;
+			targetProxy = F57C173A298468930049A458 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F57C17022984688F0049A458 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57C17032984688F0049A458 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		F57C1716298468920049A458 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57C1717298468920049A458 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F57C1719298468920049A458 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57C171A298468920049A458 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F57C1725298468920049A458 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57C1726298468920049A458 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F57C174D298468930049A458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F57C174E298468930049A458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F57C1750298468930049A458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Aspire-Bookmarking.Extension";
+				PRODUCT_NAME = "Talis Aspire Bookmarking Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F57C1751298468930049A458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Aspire-Bookmarking.Extension";
+				PRODUCT_NAME = "Talis Aspire Bookmarking Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F57C1754298468930049A458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Bookmarking";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Aspire-Bookmarking";
+				PRODUCT_NAME = "Talis Aspire Bookmarking";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F57C1755298468930049A458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Bookmarking";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Aspire-Bookmarking";
+				PRODUCT_NAME = "Talis Aspire Bookmarking";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F57C1757298468930049A458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Talis Aspire Reading Lists Bookmarking.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking.Extension";
+				PRODUCT_NAME = "Talis Aspire Bookmarking Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F57C1758298468930049A458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Talis Aspire Reading Lists Bookmarking.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking.Extension";
+				PRODUCT_NAME = "Talis Aspire Bookmarking Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F57C175B298468930049A458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Talis Aspire Reading Lists Bookmarking.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Aspire-Bookmarking";
+				PRODUCT_NAME = "Talis Aspire Bookmarking";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F57C175C298468930049A458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Talis Aspire Reading Lists Bookmarking.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Aspire-Bookmarking";
+				PRODUCT_NAME = "Talis Aspire Bookmarking";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F57C16FF2984688F0049A458 /* Build configuration list for PBXProject "Talis Aspire Bookmarking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57C174D298468930049A458 /* Debug */,
+				F57C174E298468930049A458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57C174F298468930049A458 /* Build configuration list for PBXNativeTarget "Talis Aspire Bookmarking Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57C1750298468930049A458 /* Debug */,
+				F57C1751298468930049A458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57C1753298468930049A458 /* Build configuration list for PBXNativeTarget "Talis Aspire Bookmarking (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57C1754298468930049A458 /* Debug */,
+				F57C1755298468930049A458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57C1756298468930049A458 /* Build configuration list for PBXNativeTarget "Talis Aspire Bookmarking Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57C1757298468930049A458 /* Debug */,
+				F57C1758298468930049A458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57C175A298468930049A458 /* Build configuration list for PBXNativeTarget "Talis Aspire Bookmarking (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57C175B298468930049A458 /* Debug */,
+				F57C175C298468930049A458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F57C16FC2984688F0049A458 /* Project object */;
+}
