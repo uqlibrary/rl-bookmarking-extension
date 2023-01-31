@@ -364,7 +364,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F5311FC92989ACB100358D43 /* Build configuration list for PBXProject "Talis Aspire Bookmarking" */;
+			buildConfigurationList = F5311FC92989ACB100358D43 /* Build configuration list for PBXProject "Talis_Aspire_Bookmarking" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -920,7 +920,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F5311FC92989ACB100358D43 /* Build configuration list for PBXProject "Talis Aspire Bookmarking" */ = {
+		F5311FC92989ACB100358D43 /* Build configuration list for PBXProject "Talis_Aspire_Bookmarking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F53120172989ACB300358D43 /* Debug */,
