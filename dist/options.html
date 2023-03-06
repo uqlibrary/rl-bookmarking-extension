@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-message="optionsTitle">Talis Aspire Reading Lists Bookmarking Options</title>
+    <script src="/dependencies/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="/dependencies/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/options.css" />
+    <script src="/dependencies/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/allTenants.js"></script>
+    <script src="js/tenants.js"></script>
+    <script src="js/options.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="status">
+
+        </div>
+        <div class="row" id="optionsHelp"></div>
+        <div class="row">
+            <div class="col-xs-2">
+                <span data-message="optionsInstitutionLabel">Institution:</span><br>
+            </div>
+            <div class="col-xs-8">
+                <select id="tenantList">
+                    <option value="" data-message="optionsChooseOneOptionLabel">Choose one</option>
+                    <option id="specifyTenant" value="" data-message="optionsOtherOptionLabel">Other</option>
+                </select>
+            </div>
+            <div class="col-xs-2">
+                <button id="save" data-message="optionsSave">Save</button>
+            </div>
+        </div>
+        <div class="hidden" id="manualEntry">
+            <div class="row">
+                <div class="col-xs-2" data-message="optionsShortCodeLabel">Short code:</div>
+                <div class="col-xs-2">
+                    <input type="text" id="tenantCode" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2" data-message="optionsRegionLabel">Region:</div>
+                <div class="col-xs-2">
+                    <select id="tenantRegion">
+                        <option value="" data-message="optionsChooseOneOptionLabel">Choose one</option>
+                        <option id="EUAPAC" value="EUAPAC" data-message="optionsRegionEUAPACLabel">EU / APAC</option>
+                        <option id="CA" value="CA" data-message="optionsRegionCALabel">Canada</option>
+                    </select>
+                </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

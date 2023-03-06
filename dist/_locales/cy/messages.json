@@ -1,0 +1,70 @@
+{
+    "extensionName": {
+        "message": "Talis Aspire Rhestrau Darllen Offeryn Nod Tudalen",
+        "description": "Extension name"
+    },
+    "description": {
+        "message": "Talis Aspire Rhestrau Darllen Offeryn Nod Tudalen",
+        "description": "Extension description"
+    },
+    "browserActionTitle": {
+        "message": "Ychwanegu Llyfrnod at Rhestr Ddarllen",
+        "description": "Message when hovering over extension button"
+    },
+    "optionsTitle": {
+        "message": "Talis Aspire Rhestrau Darllen Offeryn Nod Tudalen Gosodiadau",
+        "description": "Options menu title"
+    },
+    "optionsInstitutionLabel": {
+        "message": "Sefydliad:",
+        "description": "Label for tenant select"
+    },
+    "optionsRefreshTenants": {
+        "message": "adnewyddu",
+        "description": "Refresh tenants link"
+    },
+    "optionsChooseOneOptionLabel": {
+        "message": "Dewis un",
+        "description": "Choose one select option text"
+    },
+    "optionsOtherOptionLabel": {
+        "message": "Arall",
+        "description": "Manually specify tenant short code option"
+    },
+    "optionsRegionLabel": {
+        "message": "Rhanbarth",
+        "description": "Manually specify region for the given tenant short code option"
+    },
+    "optionsRegionEUAPACLabel": {
+        "message": "Ewrop / Asia Môr Tawel",
+        "description": "This option sets the region to EU / APAC"
+    },
+    "optionsRegionCALabel": {
+        "message": "Canada",
+        "description": "This option sets the region to CA"
+    },
+    "optionsShortCodeLabel": {
+        "message": "Cod byr:",
+        "description": "Manually add tenant by short code input label"
+    },
+    "optionsSave": {
+        "message": "Cadw",
+        "description": "Save settings"
+    },
+    "optionsSettingsSaved": {
+        "message": "Sefydliad arbed.",
+        "description": "Institution saved message"
+    },
+    "noTenantAlert": {
+        "message": "Nodwch sefydliad mewn lleoliadau ymestyn",
+        "description": "Alert presented if no institution has been set"
+    },
+    "noTenantShortCodeAlert": {
+        "message": "Wrth ddewis Arall rhaid i chi nodi cod byr tenant",
+        "description": "Alert presented if Other institution is selected but no short code is provided"
+    },
+    "noTenantRegionAlert": {
+        "message": "Wrth ddewis Arall rhaid i chi nodi rhanbarth",
+        "description": "Alert presented if Other institution is selected but no region is provided"
+    }
+}
