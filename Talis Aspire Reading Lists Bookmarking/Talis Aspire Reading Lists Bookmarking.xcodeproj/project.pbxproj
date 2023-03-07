@@ -7,145 +7,145 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F52A321F29B673F0006D8B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A321E29B673F0006D8B93 /* AppDelegate.swift */; };
-		F52A322129B673F0006D8B93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A322029B673F0006D8B93 /* SceneDelegate.swift */; };
-		F52A322429B673F0006D8B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52A322229B673F0006D8B93 /* LaunchScreen.storyboard */; };
-		F52A322729B673F0006D8B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52A322529B673F0006D8B93 /* Main.storyboard */; };
-		F52A323029B673F0006D8B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A322F29B673F0006D8B93 /* AppDelegate.swift */; };
-		F52A323329B673F0006D8B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52A323129B673F0006D8B93 /* Main.storyboard */; };
-		F52A323B29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F52A323A29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F52A324529B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F52A324429B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F52A324B29B673F0006D8B93 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F52A320E29B673EA006D8B93 /* Main.html */; };
-		F52A324C29B673F0006D8B93 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F52A320E29B673EA006D8B93 /* Main.html */; };
-		F52A324D29B673F0006D8B93 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F52A321029B673EA006D8B93 /* Icon.png */; };
-		F52A324E29B673F0006D8B93 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F52A321029B673EA006D8B93 /* Icon.png */; };
-		F52A324F29B673F0006D8B93 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F52A321129B673EA006D8B93 /* Style.css */; };
-		F52A325029B673F0006D8B93 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F52A321129B673EA006D8B93 /* Style.css */; };
-		F52A325129B673F0006D8B93 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F52A321229B673EA006D8B93 /* Script.js */; };
-		F52A325229B673F0006D8B93 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F52A321229B673EA006D8B93 /* Script.js */; };
-		F52A325329B673F0006D8B93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A321329B673EA006D8B93 /* ViewController.swift */; };
-		F52A325429B673F0006D8B93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A321329B673EA006D8B93 /* ViewController.swift */; };
-		F52A325529B673F0006D8B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52A321429B673F0006D8B93 /* Assets.xcassets */; };
-		F52A325629B673F0006D8B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52A321429B673F0006D8B93 /* Assets.xcassets */; };
-		F52A325729B673F0006D8B93 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A321629B673F0006D8B93 /* SafariWebExtensionHandler.swift */; };
-		F52A325829B673F0006D8B93 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A321629B673F0006D8B93 /* SafariWebExtensionHandler.swift */; };
-		F52A327229B673F0006D8B93 /* css in Resources */ = {isa = PBXBuildFile; fileRef = F52A326A29B673F0006D8B93 /* css */; };
-		F52A327329B673F0006D8B93 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F52A326B29B673F0006D8B93 /* images */; };
-		F52A327429B673F0006D8B93 /* js in Resources */ = {isa = PBXBuildFile; fileRef = F52A326C29B673F0006D8B93 /* js */; };
-		F52A327529B673F0006D8B93 /* dependencies in Resources */ = {isa = PBXBuildFile; fileRef = F52A326D29B673F0006D8B93 /* dependencies */; };
-		F52A327629B673F0006D8B93 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F52A326E29B673F0006D8B93 /* manifest.json */; };
-		F52A327729B673F0006D8B93 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = F52A326F29B673F0006D8B93 /* options.html */; };
-		F52A327829B673F0006D8B93 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = F52A327029B673F0006D8B93 /* background.html */; };
-		F52A327929B673F0006D8B93 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = F52A327129B673F0006D8B93 /* _locales */; };
-		F52A327A29B673F0006D8B93 /* css in Resources */ = {isa = PBXBuildFile; fileRef = F52A326A29B673F0006D8B93 /* css */; };
-		F52A327B29B673F0006D8B93 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F52A326B29B673F0006D8B93 /* images */; };
-		F52A327C29B673F0006D8B93 /* js in Resources */ = {isa = PBXBuildFile; fileRef = F52A326C29B673F0006D8B93 /* js */; };
-		F52A327D29B673F0006D8B93 /* dependencies in Resources */ = {isa = PBXBuildFile; fileRef = F52A326D29B673F0006D8B93 /* dependencies */; };
-		F52A327E29B673F0006D8B93 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F52A326E29B673F0006D8B93 /* manifest.json */; };
-		F52A327F29B673F0006D8B93 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = F52A326F29B673F0006D8B93 /* options.html */; };
-		F52A328029B673F0006D8B93 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = F52A327029B673F0006D8B93 /* background.html */; };
-		F52A328129B673F0006D8B93 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = F52A327129B673F0006D8B93 /* _locales */; };
+		F5738B1129B7CE5900C25699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5738B1029B7CE5900C25699 /* AppDelegate.swift */; };
+		F5738B1329B7CE5900C25699 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5738B1229B7CE5900C25699 /* SceneDelegate.swift */; };
+		F5738B1629B7CE5900C25699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5738B1429B7CE5900C25699 /* LaunchScreen.storyboard */; };
+		F5738B1929B7CE5900C25699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5738B1729B7CE5900C25699 /* Main.storyboard */; };
+		F5738B2229B7CE5900C25699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5738B2129B7CE5900C25699 /* AppDelegate.swift */; };
+		F5738B2529B7CE5900C25699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5738B2329B7CE5900C25699 /* Main.storyboard */; };
+		F5738B2D29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F5738B2C29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F5738B3729B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F5738B3629B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F5738B3D29B7CE5900C25699 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F5738B0029B7CE5800C25699 /* Main.html */; };
+		F5738B3E29B7CE5900C25699 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F5738B0029B7CE5800C25699 /* Main.html */; };
+		F5738B3F29B7CE5900C25699 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5738B0229B7CE5800C25699 /* Icon.png */; };
+		F5738B4029B7CE5900C25699 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5738B0229B7CE5800C25699 /* Icon.png */; };
+		F5738B4129B7CE5900C25699 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F5738B0329B7CE5800C25699 /* Style.css */; };
+		F5738B4229B7CE5900C25699 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F5738B0329B7CE5800C25699 /* Style.css */; };
+		F5738B4329B7CE5900C25699 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F5738B0429B7CE5800C25699 /* Script.js */; };
+		F5738B4429B7CE5900C25699 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F5738B0429B7CE5800C25699 /* Script.js */; };
+		F5738B4529B7CE5900C25699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5738B0529B7CE5800C25699 /* ViewController.swift */; };
+		F5738B4629B7CE5900C25699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5738B0529B7CE5800C25699 /* ViewController.swift */; };
+		F5738B4729B7CE5900C25699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5738B0629B7CE5900C25699 /* Assets.xcassets */; };
+		F5738B4829B7CE5900C25699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5738B0629B7CE5900C25699 /* Assets.xcassets */; };
+		F5738B4929B7CE5900C25699 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5738B0829B7CE5900C25699 /* SafariWebExtensionHandler.swift */; };
+		F5738B4A29B7CE5900C25699 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5738B0829B7CE5900C25699 /* SafariWebExtensionHandler.swift */; };
+		F5738B6429B7CE5A00C25699 /* css in Resources */ = {isa = PBXBuildFile; fileRef = F5738B5C29B7CE5A00C25699 /* css */; };
+		F5738B6529B7CE5A00C25699 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F5738B5D29B7CE5A00C25699 /* images */; };
+		F5738B6629B7CE5A00C25699 /* js in Resources */ = {isa = PBXBuildFile; fileRef = F5738B5E29B7CE5A00C25699 /* js */; };
+		F5738B6729B7CE5A00C25699 /* dependencies in Resources */ = {isa = PBXBuildFile; fileRef = F5738B5F29B7CE5A00C25699 /* dependencies */; };
+		F5738B6829B7CE5A00C25699 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F5738B6029B7CE5A00C25699 /* manifest.json */; };
+		F5738B6929B7CE5A00C25699 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = F5738B6129B7CE5A00C25699 /* options.html */; };
+		F5738B6A29B7CE5A00C25699 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = F5738B6229B7CE5A00C25699 /* background.html */; };
+		F5738B6B29B7CE5A00C25699 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = F5738B6329B7CE5A00C25699 /* _locales */; };
+		F5738B6C29B7CE5A00C25699 /* css in Resources */ = {isa = PBXBuildFile; fileRef = F5738B5C29B7CE5A00C25699 /* css */; };
+		F5738B6D29B7CE5A00C25699 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F5738B5D29B7CE5A00C25699 /* images */; };
+		F5738B6E29B7CE5A00C25699 /* js in Resources */ = {isa = PBXBuildFile; fileRef = F5738B5E29B7CE5A00C25699 /* js */; };
+		F5738B6F29B7CE5A00C25699 /* dependencies in Resources */ = {isa = PBXBuildFile; fileRef = F5738B5F29B7CE5A00C25699 /* dependencies */; };
+		F5738B7029B7CE5A00C25699 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F5738B6029B7CE5A00C25699 /* manifest.json */; };
+		F5738B7129B7CE5A00C25699 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = F5738B6129B7CE5A00C25699 /* options.html */; };
+		F5738B7229B7CE5A00C25699 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = F5738B6229B7CE5A00C25699 /* background.html */; };
+		F5738B7329B7CE5A00C25699 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = F5738B6329B7CE5A00C25699 /* _locales */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F52A323C29B673F0006D8B93 /* PBXContainerItemProxy */ = {
+		F5738B2E29B7CE5900C25699 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F52A320829B673EA006D8B93 /* Project object */;
+			containerPortal = F5738AFA29B7CE5800C25699 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F52A323929B673F0006D8B93;
+			remoteGlobalIDString = F5738B2B29B7CE5900C25699;
 			remoteInfo = "Talis Aspire Reading Lists Bookmarking Extension (iOS)";
 		};
-		F52A324629B673F0006D8B93 /* PBXContainerItemProxy */ = {
+		F5738B3829B7CE5900C25699 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F52A320829B673EA006D8B93 /* Project object */;
+			containerPortal = F5738AFA29B7CE5800C25699 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F52A324329B673F0006D8B93;
+			remoteGlobalIDString = F5738B3529B7CE5900C25699;
 			remoteInfo = "Talis Aspire Reading Lists Bookmarking Extension (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F52A325E29B673F0006D8B93 /* Embed Foundation Extensions */ = {
+		F5738B5029B7CE5900C25699 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F52A323B29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex in Embed Foundation Extensions */,
+				F5738B2D29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52A326529B673F0006D8B93 /* Embed Foundation Extensions */ = {
+		F5738B5729B7CE5900C25699 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F52A324529B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex in Embed Foundation Extensions */,
+				F5738B3729B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F52A320F29B673EA006D8B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
-		F52A321029B673EA006D8B93 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		F52A321129B673EA006D8B93 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
-		F52A321229B673EA006D8B93 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
-		F52A321329B673EA006D8B93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F52A321429B673F0006D8B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F52A321629B673F0006D8B93 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		F52A321B29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talis Aspire Reading Lists Bookmarking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F52A321E29B673F0006D8B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F52A322029B673F0006D8B93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F52A322329B673F0006D8B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F52A322629B673F0006D8B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F52A322829B673F0006D8B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F52A322D29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talis Aspire Reading Lists Bookmarking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F52A322F29B673F0006D8B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F52A323229B673F0006D8B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F52A323429B673F0006D8B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F52A323529B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Talis Aspire Reading Lists Bookmarking.entitlements"; sourceTree = "<group>"; };
-		F52A323A29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Talis Aspire Reading Lists Bookmarking Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F52A323F29B673F0006D8B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F52A324429B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Talis Aspire Reading Lists Bookmarking Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F52A324929B673F0006D8B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F52A324A29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Talis Aspire Reading Lists Bookmarking.entitlements"; sourceTree = "<group>"; };
-		F52A326A29B673F0006D8B93 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = ../../dist/css; sourceTree = "<group>"; };
-		F52A326B29B673F0006D8B93 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../dist/images; sourceTree = "<group>"; };
-		F52A326C29B673F0006D8B93 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = ../../dist/js; sourceTree = "<group>"; };
-		F52A326D29B673F0006D8B93 /* dependencies */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dependencies; path = ../../dist/dependencies; sourceTree = "<group>"; };
-		F52A326E29B673F0006D8B93 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../dist/manifest.json; sourceTree = "<group>"; };
-		F52A326F29B673F0006D8B93 /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../dist/options.html; sourceTree = "<group>"; };
-		F52A327029B673F0006D8B93 /* background.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = background.html; path = ../../dist/background.html; sourceTree = "<group>"; };
-		F52A327129B673F0006D8B93 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../dist/_locales; sourceTree = "<group>"; };
+		F5738B0129B7CE5800C25699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		F5738B0229B7CE5800C25699 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F5738B0329B7CE5800C25699 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		F5738B0429B7CE5800C25699 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		F5738B0529B7CE5800C25699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5738B0629B7CE5900C25699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5738B0829B7CE5900C25699 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		F5738B0D29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talis Aspire Reading Lists Bookmarking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5738B1029B7CE5900C25699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5738B1229B7CE5900C25699 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5738B1529B7CE5900C25699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5738B1829B7CE5900C25699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5738B1A29B7CE5900C25699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5738B1F29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talis Aspire Reading Lists Bookmarking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5738B2129B7CE5900C25699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5738B2429B7CE5900C25699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5738B2629B7CE5900C25699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5738B2729B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Talis Aspire Reading Lists Bookmarking.entitlements"; sourceTree = "<group>"; };
+		F5738B2C29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Talis Aspire Reading Lists Bookmarking Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5738B3129B7CE5900C25699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5738B3629B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Talis Aspire Reading Lists Bookmarking Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5738B3B29B7CE5900C25699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5738B3C29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Talis Aspire Reading Lists Bookmarking.entitlements"; sourceTree = "<group>"; };
+		F5738B5C29B7CE5A00C25699 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = ../../dist/css; sourceTree = "<group>"; };
+		F5738B5D29B7CE5A00C25699 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../dist/images; sourceTree = "<group>"; };
+		F5738B5E29B7CE5A00C25699 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = ../../dist/js; sourceTree = "<group>"; };
+		F5738B5F29B7CE5A00C25699 /* dependencies */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dependencies; path = ../../dist/dependencies; sourceTree = "<group>"; };
+		F5738B6029B7CE5A00C25699 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../dist/manifest.json; sourceTree = "<group>"; };
+		F5738B6129B7CE5A00C25699 /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../dist/options.html; sourceTree = "<group>"; };
+		F5738B6229B7CE5A00C25699 /* background.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = background.html; path = ../../dist/background.html; sourceTree = "<group>"; };
+		F5738B6329B7CE5A00C25699 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../dist/_locales; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F52A321829B673F0006D8B93 /* Frameworks */ = {
+		F5738B0A29B7CE5900C25699 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52A322A29B673F0006D8B93 /* Frameworks */ = {
+		F5738B1C29B7CE5900C25699 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52A323729B673F0006D8B93 /* Frameworks */ = {
+		F5738B2929B7CE5900C25699 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52A324129B673F0006D8B93 /* Frameworks */ = {
+		F5738B3329B7CE5900C25699 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,111 +155,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F52A320729B673EA006D8B93 = {
+		F5738AF929B7CE5800C25699 = {
 			isa = PBXGroup;
 			children = (
-				F52A320C29B673EA006D8B93 /* Shared (App) */,
-				F52A321529B673F0006D8B93 /* Shared (Extension) */,
-				F52A321D29B673F0006D8B93 /* iOS (App) */,
-				F52A322E29B673F0006D8B93 /* macOS (App) */,
-				F52A323E29B673F0006D8B93 /* iOS (Extension) */,
-				F52A324829B673F0006D8B93 /* macOS (Extension) */,
-				F52A321C29B673F0006D8B93 /* Products */,
+				F5738AFE29B7CE5800C25699 /* Shared (App) */,
+				F5738B0729B7CE5900C25699 /* Shared (Extension) */,
+				F5738B0F29B7CE5900C25699 /* iOS (App) */,
+				F5738B2029B7CE5900C25699 /* macOS (App) */,
+				F5738B3029B7CE5900C25699 /* iOS (Extension) */,
+				F5738B3A29B7CE5900C25699 /* macOS (Extension) */,
+				F5738B0E29B7CE5900C25699 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F52A320C29B673EA006D8B93 /* Shared (App) */ = {
+		F5738AFE29B7CE5800C25699 /* Shared (App) */ = {
 			isa = PBXGroup;
 			children = (
-				F52A321329B673EA006D8B93 /* ViewController.swift */,
-				F52A321429B673F0006D8B93 /* Assets.xcassets */,
-				F52A320D29B673EA006D8B93 /* Resources */,
+				F5738B0529B7CE5800C25699 /* ViewController.swift */,
+				F5738B0629B7CE5900C25699 /* Assets.xcassets */,
+				F5738AFF29B7CE5800C25699 /* Resources */,
 			);
 			path = "Shared (App)";
 			sourceTree = "<group>";
 		};
-		F52A320D29B673EA006D8B93 /* Resources */ = {
+		F5738AFF29B7CE5800C25699 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F52A320E29B673EA006D8B93 /* Main.html */,
-				F52A321029B673EA006D8B93 /* Icon.png */,
-				F52A321129B673EA006D8B93 /* Style.css */,
-				F52A321229B673EA006D8B93 /* Script.js */,
+				F5738B0029B7CE5800C25699 /* Main.html */,
+				F5738B0229B7CE5800C25699 /* Icon.png */,
+				F5738B0329B7CE5800C25699 /* Style.css */,
+				F5738B0429B7CE5800C25699 /* Script.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		F52A321529B673F0006D8B93 /* Shared (Extension) */ = {
+		F5738B0729B7CE5900C25699 /* Shared (Extension) */ = {
 			isa = PBXGroup;
 			children = (
-				F52A326929B673F0006D8B93 /* Resources */,
-				F52A321629B673F0006D8B93 /* SafariWebExtensionHandler.swift */,
+				F5738B5B29B7CE5A00C25699 /* Resources */,
+				F5738B0829B7CE5900C25699 /* SafariWebExtensionHandler.swift */,
 			);
 			path = "Shared (Extension)";
 			sourceTree = "<group>";
 		};
-		F52A321C29B673F0006D8B93 /* Products */ = {
+		F5738B0E29B7CE5900C25699 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F52A321B29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking.app */,
-				F52A322D29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking.app */,
-				F52A323A29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex */,
-				F52A324429B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex */,
+				F5738B0D29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking.app */,
+				F5738B1F29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking.app */,
+				F5738B2C29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex */,
+				F5738B3629B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F52A321D29B673F0006D8B93 /* iOS (App) */ = {
+		F5738B0F29B7CE5900C25699 /* iOS (App) */ = {
 			isa = PBXGroup;
 			children = (
-				F52A321E29B673F0006D8B93 /* AppDelegate.swift */,
-				F52A322029B673F0006D8B93 /* SceneDelegate.swift */,
-				F52A322229B673F0006D8B93 /* LaunchScreen.storyboard */,
-				F52A322529B673F0006D8B93 /* Main.storyboard */,
-				F52A322829B673F0006D8B93 /* Info.plist */,
+				F5738B1029B7CE5900C25699 /* AppDelegate.swift */,
+				F5738B1229B7CE5900C25699 /* SceneDelegate.swift */,
+				F5738B1429B7CE5900C25699 /* LaunchScreen.storyboard */,
+				F5738B1729B7CE5900C25699 /* Main.storyboard */,
+				F5738B1A29B7CE5900C25699 /* Info.plist */,
 			);
 			path = "iOS (App)";
 			sourceTree = "<group>";
 		};
-		F52A322E29B673F0006D8B93 /* macOS (App) */ = {
+		F5738B2029B7CE5900C25699 /* macOS (App) */ = {
 			isa = PBXGroup;
 			children = (
-				F52A322F29B673F0006D8B93 /* AppDelegate.swift */,
-				F52A323129B673F0006D8B93 /* Main.storyboard */,
-				F52A323429B673F0006D8B93 /* Info.plist */,
-				F52A323529B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking.entitlements */,
+				F5738B2129B7CE5900C25699 /* AppDelegate.swift */,
+				F5738B2329B7CE5900C25699 /* Main.storyboard */,
+				F5738B2629B7CE5900C25699 /* Info.plist */,
+				F5738B2729B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking.entitlements */,
 			);
 			path = "macOS (App)";
 			sourceTree = "<group>";
 		};
-		F52A323E29B673F0006D8B93 /* iOS (Extension) */ = {
+		F5738B3029B7CE5900C25699 /* iOS (Extension) */ = {
 			isa = PBXGroup;
 			children = (
-				F52A323F29B673F0006D8B93 /* Info.plist */,
+				F5738B3129B7CE5900C25699 /* Info.plist */,
 			);
 			path = "iOS (Extension)";
 			sourceTree = "<group>";
 		};
-		F52A324829B673F0006D8B93 /* macOS (Extension) */ = {
+		F5738B3A29B7CE5900C25699 /* macOS (Extension) */ = {
 			isa = PBXGroup;
 			children = (
-				F52A324929B673F0006D8B93 /* Info.plist */,
-				F52A324A29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking.entitlements */,
+				F5738B3B29B7CE5900C25699 /* Info.plist */,
+				F5738B3C29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking.entitlements */,
 			);
 			path = "macOS (Extension)";
 			sourceTree = "<group>";
 		};
-		F52A326929B673F0006D8B93 /* Resources */ = {
+		F5738B5B29B7CE5A00C25699 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F52A326A29B673F0006D8B93 /* css */,
-				F52A326B29B673F0006D8B93 /* images */,
-				F52A326C29B673F0006D8B93 /* js */,
-				F52A326D29B673F0006D8B93 /* dependencies */,
-				F52A326E29B673F0006D8B93 /* manifest.json */,
-				F52A326F29B673F0006D8B93 /* options.html */,
-				F52A327029B673F0006D8B93 /* background.html */,
-				F52A327129B673F0006D8B93 /* _locales */,
+				F5738B5C29B7CE5A00C25699 /* css */,
+				F5738B5D29B7CE5A00C25699 /* images */,
+				F5738B5E29B7CE5A00C25699 /* js */,
+				F5738B5F29B7CE5A00C25699 /* dependencies */,
+				F5738B6029B7CE5A00C25699 /* manifest.json */,
+				F5738B6129B7CE5A00C25699 /* options.html */,
+				F5738B6229B7CE5A00C25699 /* background.html */,
+				F5738B6329B7CE5A00C25699 /* _locales */,
 			);
 			name = Resources;
 			path = "Shared (Extension)";
@@ -268,51 +268,51 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F52A321A29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking (iOS) */ = {
+		F5738B0C29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F52A325F29B673F0006D8B93 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking (iOS)" */;
+			buildConfigurationList = F5738B5129B7CE5900C25699 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking (iOS)" */;
 			buildPhases = (
-				F52A321729B673F0006D8B93 /* Sources */,
-				F52A321829B673F0006D8B93 /* Frameworks */,
-				F52A321929B673F0006D8B93 /* Resources */,
-				F52A325E29B673F0006D8B93 /* Embed Foundation Extensions */,
+				F5738B0929B7CE5900C25699 /* Sources */,
+				F5738B0A29B7CE5900C25699 /* Frameworks */,
+				F5738B0B29B7CE5900C25699 /* Resources */,
+				F5738B5029B7CE5900C25699 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F52A323D29B673F0006D8B93 /* PBXTargetDependency */,
+				F5738B2F29B7CE5900C25699 /* PBXTargetDependency */,
 			);
 			name = "Talis Aspire Reading Lists Bookmarking (iOS)";
 			productName = "Talis Aspire Reading Lists Bookmarking (iOS)";
-			productReference = F52A321B29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking.app */;
+			productReference = F5738B0D29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F52A322C29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking (macOS) */ = {
+		F5738B1E29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F52A326629B673F0006D8B93 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking (macOS)" */;
+			buildConfigurationList = F5738B5829B7CE5900C25699 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking (macOS)" */;
 			buildPhases = (
-				F52A322929B673F0006D8B93 /* Sources */,
-				F52A322A29B673F0006D8B93 /* Frameworks */,
-				F52A322B29B673F0006D8B93 /* Resources */,
-				F52A326529B673F0006D8B93 /* Embed Foundation Extensions */,
+				F5738B1B29B7CE5900C25699 /* Sources */,
+				F5738B1C29B7CE5900C25699 /* Frameworks */,
+				F5738B1D29B7CE5900C25699 /* Resources */,
+				F5738B5729B7CE5900C25699 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F52A324729B673F0006D8B93 /* PBXTargetDependency */,
+				F5738B3929B7CE5900C25699 /* PBXTargetDependency */,
 			);
 			name = "Talis Aspire Reading Lists Bookmarking (macOS)";
 			productName = "Talis Aspire Reading Lists Bookmarking (macOS)";
-			productReference = F52A322D29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking.app */;
+			productReference = F5738B1F29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F52A323929B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension (iOS) */ = {
+		F5738B2B29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F52A325B29B673F0006D8B93 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking Extension (iOS)" */;
+			buildConfigurationList = F5738B4D29B7CE5900C25699 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking Extension (iOS)" */;
 			buildPhases = (
-				F52A323629B673F0006D8B93 /* Sources */,
-				F52A323729B673F0006D8B93 /* Frameworks */,
-				F52A323829B673F0006D8B93 /* Resources */,
+				F5738B2829B7CE5900C25699 /* Sources */,
+				F5738B2929B7CE5900C25699 /* Frameworks */,
+				F5738B2A29B7CE5900C25699 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -320,16 +320,16 @@
 			);
 			name = "Talis Aspire Reading Lists Bookmarking Extension (iOS)";
 			productName = "Talis Aspire Reading Lists Bookmarking Extension (iOS)";
-			productReference = F52A323A29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex */;
+			productReference = F5738B2C29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		F52A324329B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension (macOS) */ = {
+		F5738B3529B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F52A326229B673F0006D8B93 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking Extension (macOS)" */;
+			buildConfigurationList = F5738B5429B7CE5900C25699 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking Extension (macOS)" */;
 			buildPhases = (
-				F52A324029B673F0006D8B93 /* Sources */,
-				F52A324129B673F0006D8B93 /* Frameworks */,
-				F52A324229B673F0006D8B93 /* Resources */,
+				F5738B3229B7CE5900C25699 /* Sources */,
+				F5738B3329B7CE5900C25699 /* Frameworks */,
+				F5738B3429B7CE5900C25699 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -337,34 +337,34 @@
 			);
 			name = "Talis Aspire Reading Lists Bookmarking Extension (macOS)";
 			productName = "Talis Aspire Reading Lists Bookmarking Extension (macOS)";
-			productReference = F52A324429B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension.appex */;
+			productReference = F5738B3629B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F52A320829B673EA006D8B93 /* Project object */ = {
+		F5738AFA29B7CE5800C25699 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					F52A321A29B673F0006D8B93 = {
+					F5738B0C29B7CE5900C25699 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					F52A322C29B673F0006D8B93 = {
+					F5738B1E29B7CE5900C25699 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					F52A323929B673F0006D8B93 = {
+					F5738B2B29B7CE5900C25699 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					F52A324329B673F0006D8B93 = {
+					F5738B3529B7CE5900C25699 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = F52A320B29B673EA006D8B93 /* Build configuration list for PBXProject "Talis Aspire Reading Lists Bookmarking" */;
+			buildConfigurationList = F5738AFD29B7CE5800C25699 /* Build configuration list for PBXProject "Talis Aspire Reading Lists Bookmarking" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -372,159 +372,159 @@
 				en,
 				Base,
 			);
-			mainGroup = F52A320729B673EA006D8B93;
-			productRefGroup = F52A321C29B673F0006D8B93 /* Products */;
+			mainGroup = F5738AF929B7CE5800C25699;
+			productRefGroup = F5738B0E29B7CE5900C25699 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F52A321A29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking (iOS) */,
-				F52A322C29B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking (macOS) */,
-				F52A323929B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension (iOS) */,
-				F52A324329B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension (macOS) */,
+				F5738B0C29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking (iOS) */,
+				F5738B1E29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking (macOS) */,
+				F5738B2B29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension (iOS) */,
+				F5738B3529B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F52A321929B673F0006D8B93 /* Resources */ = {
+		F5738B0B29B7CE5900C25699 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52A324D29B673F0006D8B93 /* Icon.png in Resources */,
-				F52A322429B673F0006D8B93 /* LaunchScreen.storyboard in Resources */,
-				F52A324B29B673F0006D8B93 /* Main.html in Resources */,
-				F52A325129B673F0006D8B93 /* Script.js in Resources */,
-				F52A325529B673F0006D8B93 /* Assets.xcassets in Resources */,
-				F52A322729B673F0006D8B93 /* Main.storyboard in Resources */,
-				F52A324F29B673F0006D8B93 /* Style.css in Resources */,
+				F5738B3F29B7CE5900C25699 /* Icon.png in Resources */,
+				F5738B1629B7CE5900C25699 /* LaunchScreen.storyboard in Resources */,
+				F5738B3D29B7CE5900C25699 /* Main.html in Resources */,
+				F5738B4329B7CE5900C25699 /* Script.js in Resources */,
+				F5738B4729B7CE5900C25699 /* Assets.xcassets in Resources */,
+				F5738B1929B7CE5900C25699 /* Main.storyboard in Resources */,
+				F5738B4129B7CE5900C25699 /* Style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52A322B29B673F0006D8B93 /* Resources */ = {
+		F5738B1D29B7CE5900C25699 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52A324E29B673F0006D8B93 /* Icon.png in Resources */,
-				F52A325029B673F0006D8B93 /* Style.css in Resources */,
-				F52A323329B673F0006D8B93 /* Main.storyboard in Resources */,
-				F52A325229B673F0006D8B93 /* Script.js in Resources */,
-				F52A325629B673F0006D8B93 /* Assets.xcassets in Resources */,
-				F52A324C29B673F0006D8B93 /* Main.html in Resources */,
+				F5738B4029B7CE5900C25699 /* Icon.png in Resources */,
+				F5738B4229B7CE5900C25699 /* Style.css in Resources */,
+				F5738B2529B7CE5900C25699 /* Main.storyboard in Resources */,
+				F5738B4429B7CE5900C25699 /* Script.js in Resources */,
+				F5738B4829B7CE5900C25699 /* Assets.xcassets in Resources */,
+				F5738B3E29B7CE5900C25699 /* Main.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52A323829B673F0006D8B93 /* Resources */ = {
+		F5738B2A29B7CE5900C25699 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52A328029B673F0006D8B93 /* background.html in Resources */,
-				F52A327B29B673F0006D8B93 /* images in Resources */,
-				F52A328129B673F0006D8B93 /* _locales in Resources */,
-				F52A327C29B673F0006D8B93 /* js in Resources */,
-				F52A327E29B673F0006D8B93 /* manifest.json in Resources */,
-				F52A327A29B673F0006D8B93 /* css in Resources */,
-				F52A327D29B673F0006D8B93 /* dependencies in Resources */,
-				F52A327F29B673F0006D8B93 /* options.html in Resources */,
+				F5738B7229B7CE5A00C25699 /* background.html in Resources */,
+				F5738B6D29B7CE5A00C25699 /* images in Resources */,
+				F5738B7329B7CE5A00C25699 /* _locales in Resources */,
+				F5738B6E29B7CE5A00C25699 /* js in Resources */,
+				F5738B7029B7CE5A00C25699 /* manifest.json in Resources */,
+				F5738B6C29B7CE5A00C25699 /* css in Resources */,
+				F5738B6F29B7CE5A00C25699 /* dependencies in Resources */,
+				F5738B7129B7CE5A00C25699 /* options.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52A324229B673F0006D8B93 /* Resources */ = {
+		F5738B3429B7CE5900C25699 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52A327829B673F0006D8B93 /* background.html in Resources */,
-				F52A327329B673F0006D8B93 /* images in Resources */,
-				F52A327929B673F0006D8B93 /* _locales in Resources */,
-				F52A327429B673F0006D8B93 /* js in Resources */,
-				F52A327629B673F0006D8B93 /* manifest.json in Resources */,
-				F52A327229B673F0006D8B93 /* css in Resources */,
-				F52A327529B673F0006D8B93 /* dependencies in Resources */,
-				F52A327729B673F0006D8B93 /* options.html in Resources */,
+				F5738B6A29B7CE5A00C25699 /* background.html in Resources */,
+				F5738B6529B7CE5A00C25699 /* images in Resources */,
+				F5738B6B29B7CE5A00C25699 /* _locales in Resources */,
+				F5738B6629B7CE5A00C25699 /* js in Resources */,
+				F5738B6829B7CE5A00C25699 /* manifest.json in Resources */,
+				F5738B6429B7CE5A00C25699 /* css in Resources */,
+				F5738B6729B7CE5A00C25699 /* dependencies in Resources */,
+				F5738B6929B7CE5A00C25699 /* options.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F52A321729B673F0006D8B93 /* Sources */ = {
+		F5738B0929B7CE5900C25699 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52A325329B673F0006D8B93 /* ViewController.swift in Sources */,
-				F52A321F29B673F0006D8B93 /* AppDelegate.swift in Sources */,
-				F52A322129B673F0006D8B93 /* SceneDelegate.swift in Sources */,
+				F5738B4529B7CE5900C25699 /* ViewController.swift in Sources */,
+				F5738B1129B7CE5900C25699 /* AppDelegate.swift in Sources */,
+				F5738B1329B7CE5900C25699 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52A322929B673F0006D8B93 /* Sources */ = {
+		F5738B1B29B7CE5900C25699 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52A325429B673F0006D8B93 /* ViewController.swift in Sources */,
-				F52A323029B673F0006D8B93 /* AppDelegate.swift in Sources */,
+				F5738B4629B7CE5900C25699 /* ViewController.swift in Sources */,
+				F5738B2229B7CE5900C25699 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52A323629B673F0006D8B93 /* Sources */ = {
+		F5738B2829B7CE5900C25699 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52A325729B673F0006D8B93 /* SafariWebExtensionHandler.swift in Sources */,
+				F5738B4929B7CE5900C25699 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52A324029B673F0006D8B93 /* Sources */ = {
+		F5738B3229B7CE5900C25699 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52A325829B673F0006D8B93 /* SafariWebExtensionHandler.swift in Sources */,
+				F5738B4A29B7CE5900C25699 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F52A323D29B673F0006D8B93 /* PBXTargetDependency */ = {
+		F5738B2F29B7CE5900C25699 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F52A323929B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension (iOS) */;
-			targetProxy = F52A323C29B673F0006D8B93 /* PBXContainerItemProxy */;
+			target = F5738B2B29B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension (iOS) */;
+			targetProxy = F5738B2E29B7CE5900C25699 /* PBXContainerItemProxy */;
 		};
-		F52A324729B673F0006D8B93 /* PBXTargetDependency */ = {
+		F5738B3929B7CE5900C25699 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F52A324329B673F0006D8B93 /* Talis Aspire Reading Lists Bookmarking Extension (macOS) */;
-			targetProxy = F52A324629B673F0006D8B93 /* PBXContainerItemProxy */;
+			target = F5738B3529B7CE5900C25699 /* Talis Aspire Reading Lists Bookmarking Extension (macOS) */;
+			targetProxy = F5738B3829B7CE5900C25699 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F52A320E29B673EA006D8B93 /* Main.html */ = {
+		F5738B0029B7CE5800C25699 /* Main.html */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F52A320F29B673EA006D8B93 /* Base */,
+				F5738B0129B7CE5800C25699 /* Base */,
 			);
 			name = Main.html;
 			sourceTree = "<group>";
 		};
-		F52A322229B673F0006D8B93 /* LaunchScreen.storyboard */ = {
+		F5738B1429B7CE5900C25699 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F52A322329B673F0006D8B93 /* Base */,
+				F5738B1529B7CE5900C25699 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		F52A322529B673F0006D8B93 /* Main.storyboard */ = {
+		F5738B1729B7CE5900C25699 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F52A322629B673F0006D8B93 /* Base */,
+				F5738B1829B7CE5900C25699 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F52A323129B673F0006D8B93 /* Main.storyboard */ = {
+		F5738B2329B7CE5900C25699 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F52A323229B673F0006D8B93 /* Base */,
+				F5738B2429B7CE5900C25699 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -532,7 +532,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F52A325929B673F0006D8B93 /* Debug */ = {
+		F5738B4B29B7CE5900C25699 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -590,7 +590,7 @@
 			};
 			name = Debug;
 		};
-		F52A325A29B673F0006D8B93 /* Release */ = {
+		F5738B4C29B7CE5900C25699 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -641,7 +641,7 @@
 			};
 			name = Release;
 		};
-		F52A325C29B673F0006D8B93 /* Debug */ = {
+		F5738B4E29B7CE5900C25699 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -671,7 +671,7 @@
 			};
 			name = Debug;
 		};
-		F52A325D29B673F0006D8B93 /* Release */ = {
+		F5738B4F29B7CE5900C25699 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -702,7 +702,7 @@
 			};
 			name = Release;
 		};
-		F52A326029B673F0006D8B93 /* Debug */ = {
+		F5738B5229B7CE5900C25699 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -710,7 +710,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking";
@@ -731,7 +730,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -740,7 +739,7 @@
 			};
 			name = Debug;
 		};
-		F52A326129B673F0006D8B93 /* Release */ = {
+		F5738B5329B7CE5900C25699 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -748,7 +747,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking";
@@ -769,7 +767,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -779,7 +777,7 @@
 			};
 			name = Release;
 		};
-		F52A326329B673F0006D8B93 /* Debug */ = {
+		F5738B5529B7CE5900C25699 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Talis Aspire Reading Lists Bookmarking.entitlements";
@@ -810,7 +808,7 @@
 			};
 			name = Debug;
 		};
-		F52A326429B673F0006D8B93 /* Release */ = {
+		F5738B5629B7CE5900C25699 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Talis Aspire Reading Lists Bookmarking.entitlements";
@@ -841,7 +839,7 @@
 			};
 			name = Release;
 		};
-		F52A326729B673F0006D8B93 /* Debug */ = {
+		F5738B5929B7CE5900C25699 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -850,7 +848,6 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Talis Aspire Reading Lists Bookmarking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
@@ -869,7 +866,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -877,7 +874,7 @@
 			};
 			name = Debug;
 		};
-		F52A326829B673F0006D8B93 /* Release */ = {
+		F5738B5A29B7CE5900C25699 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -886,7 +883,6 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Talis Aspire Reading Lists Bookmarking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
@@ -905,7 +901,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -916,52 +912,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F52A320B29B673EA006D8B93 /* Build configuration list for PBXProject "Talis Aspire Reading Lists Bookmarking" */ = {
+		F5738AFD29B7CE5800C25699 /* Build configuration list for PBXProject "Talis Aspire Reading Lists Bookmarking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F52A325929B673F0006D8B93 /* Debug */,
-				F52A325A29B673F0006D8B93 /* Release */,
+				F5738B4B29B7CE5900C25699 /* Debug */,
+				F5738B4C29B7CE5900C25699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F52A325B29B673F0006D8B93 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking Extension (iOS)" */ = {
+		F5738B4D29B7CE5900C25699 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking Extension (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F52A325C29B673F0006D8B93 /* Debug */,
-				F52A325D29B673F0006D8B93 /* Release */,
+				F5738B4E29B7CE5900C25699 /* Debug */,
+				F5738B4F29B7CE5900C25699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F52A325F29B673F0006D8B93 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking (iOS)" */ = {
+		F5738B5129B7CE5900C25699 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F52A326029B673F0006D8B93 /* Debug */,
-				F52A326129B673F0006D8B93 /* Release */,
+				F5738B5229B7CE5900C25699 /* Debug */,
+				F5738B5329B7CE5900C25699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F52A326229B673F0006D8B93 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking Extension (macOS)" */ = {
+		F5738B5429B7CE5900C25699 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking Extension (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F52A326329B673F0006D8B93 /* Debug */,
-				F52A326429B673F0006D8B93 /* Release */,
+				F5738B5529B7CE5900C25699 /* Debug */,
+				F5738B5629B7CE5900C25699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F52A326629B673F0006D8B93 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking (macOS)" */ = {
+		F5738B5829B7CE5900C25699 /* Build configuration list for PBXNativeTarget "Talis Aspire Reading Lists Bookmarking (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F52A326729B673F0006D8B93 /* Debug */,
-				F52A326829B673F0006D8B93 /* Release */,
+				F5738B5929B7CE5900C25699 /* Debug */,
+				F5738B5A29B7CE5900C25699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F52A320829B673EA006D8B93 /* Project object */;
+	rootObject = F5738AFA29B7CE5800C25699 /* Project object */;
 }

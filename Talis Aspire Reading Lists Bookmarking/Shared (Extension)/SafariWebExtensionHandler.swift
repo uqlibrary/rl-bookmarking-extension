@@ -2,7 +2,7 @@
 //  SafariWebExtensionHandler.swift
 //  Shared (Extension)
 //
-//  Created by Ross Singer on 3/6/23.
+//  Created by Ross Singer on 3/7/23.
 //
 
 import SafariServices
