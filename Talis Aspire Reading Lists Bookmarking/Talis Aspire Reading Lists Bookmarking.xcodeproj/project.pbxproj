@@ -646,6 +646,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking Extension";
@@ -661,7 +662,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking.Extension";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -676,6 +677,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking Extension";
@@ -691,7 +693,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking.Extension";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -710,9 +712,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -730,7 +734,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -747,9 +751,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -767,7 +773,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -783,6 +789,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Talis Aspire Reading Lists Bookmarking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
@@ -799,7 +806,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking.Extension";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -814,6 +821,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Talis Aspire Reading Lists Bookmarking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
@@ -830,7 +838,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking.Extension";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -845,13 +853,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Talis Aspire Reading Lists Bookmarking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -866,7 +877,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -880,13 +891,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Talis Aspire Reading Lists Bookmarking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Z3YJ5UNM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Talis Aspire Reading Lists Bookmarking";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -901,7 +915,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking";
 				PRODUCT_NAME = "Talis Aspire Reading Lists Bookmarking";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;

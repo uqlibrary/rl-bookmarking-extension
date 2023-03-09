@@ -16,7 +16,7 @@ import SafariServices
 typealias PlatformViewController = NSViewController
 #endif
 
-let extensionBundleIdentifier = "com.yourCompany.Talis-Aspire-Reading-Lists-Bookmarking.Extension"
+let extensionBundleIdentifier = "com.Talis.Talis-Aspire-Reading-Lists-Bookmarking.Extension"
 
 class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMessageHandler {
 
