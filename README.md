@@ -14,6 +14,8 @@ The extension should work with:
 - Opera
 - Vivaldi
 
+For Safari, please see https://github.com/talis/rl-bookmarking-extension/docs/safari.md
+
 To customize for your institution:
 
 Replace images/icon*.png with appropriate images for your institution.
