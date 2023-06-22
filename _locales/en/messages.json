@@ -31,6 +31,18 @@
         "message": "Other",
         "description": "Manually specify tenant short code option"
     },
+    "optionsProxyPrefixLabel": {
+        "message": "Proxy Prefix:",
+        "description": "Label for Proxy Prefix"
+    },
+    "optionsProxyHostnamesLabel": {
+        "message": "Proxy Hostnames (comma separated):",
+        "description": "Label for Proxy Hostnames"
+    },
+    "optionsProxyURLEncodedLabel": {
+        "message": "URL Encoded?",
+        "description": "Label for Proxy URL Encoded"
+    },
     "optionsRegionLabel": {
         "message": "Region",
         "description": "Manually specify region for the given tenant short code option"

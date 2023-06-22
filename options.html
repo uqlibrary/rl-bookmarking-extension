@@ -10,6 +10,7 @@
     <script src="js/allTenants.js"></script>
     <script src="js/tenants.js"></script>
     <script src="js/options.js"></script>
+    <script src="js/proxy.js"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -28,6 +29,32 @@
                 </select>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-xs-2">
+                <span data-message="optionsProxyPrefixLabel">Proxy Prefix:</span><br>
+            </div>
+            <div class="col-xs-8">
+                <input type="text" id="proxyPrefix" size="50" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                <span data-message="optionsProxyHostnamesLabel">Proxy Hostnames (comma separated):</span><br>
+            </div>
+            <div class="col-xs-8">
+                <input type="text" id="proxyHostnames" size="50" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                <span data-message="optionsProxyURLEncodedLabel">URL Encoded?</span><br>
+            </div>
+            <div class="col-xs-8">
+                <input type="checkbox" id="proxyUrlEncoded" />
+            </div>
+        </div>
+
         <div class="hidden" id="manualEntry">
             <div class="row">
                 <div class="col-xs-2" data-message="optionsShortCodeLabel">Short code:</div>
@@ -46,6 +73,7 @@
                 </div>
                 </div>
         </div>
+
         <div class="row">
             <div class="col-xs-2">
                 <button id="save" data-message="optionsSave">Save</button>

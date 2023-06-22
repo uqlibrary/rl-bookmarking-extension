@@ -5,6 +5,14 @@ $(function() {
         if ($('#specifyTenant:selected').length > 0) {
             $('#manualEntry').removeClass('hidden');
         } else {
+            $('#proxyPrefix').val('');
+            $('#proxyHostnames').val('');
+            $('#proxyUrlEncoded').checked = false;
+            proxyPreconfigured($('#tenantCode').val(), function(proxyConfig){
+                $('#proxyPrefix').val(proxyConfig.prefix);
+                $('#proxyHostnames').val(proxyConfig.proxies);
+                $('#proxyUrlEncoded').checked = proxyConfig.encoded;
+            })
             $('#manualEntry').addClass('hidden');
         }
     });
@@ -30,7 +38,13 @@ $(function() {
             getTenants(function(tenants) {
                 for (var tenantCode in tenants) {
                     if (tenantCode === $('#tenantCode').val()) {
-                        saveActiveTenantAndUpdateStatus(tenants[tenantCode]);
+                        var tenant = tenants[tenantCode];
+                        tenant['proxy'] = {
+                            'prefix': $('#proxyPrefix').val(),
+                            'proxies': $('#proxyHostnames').val(),
+                            'encoded': $('#proxyUrlEncoded').val()
+                        }
+                        saveActiveTenantAndUpdateStatus(tenant);
                     }
                 }
             });
