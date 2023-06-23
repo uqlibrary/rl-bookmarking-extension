@@ -17,3 +17,5 @@ function proxyPreconfigured(tenantCode, cb) {
   }
   cb(configs[tenantCode]);
 }
+
+// TODO configure list of domains to always prepend to

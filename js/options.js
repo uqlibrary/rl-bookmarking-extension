@@ -11,7 +11,7 @@ $(function() {
             proxyPreconfigured($('#tenantCode').val(), function(proxyConfig){
                 $('#proxyPrefix').val(proxyConfig.prefix);
                 $('#proxyHostnames').val(proxyConfig.proxies);
-                $('#proxyUrlEncoded').checked = proxyConfig.encoded;
+                $('#proxyUrlEncoded').prop('checked', proxyConfig.encoded);
             })
             $('#manualEntry').addClass('hidden');
         }
